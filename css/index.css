@@ -1,0 +1,2323 @@
+/*Default Project Fonts*/
+@font-face {
+  font-family: 'Marion';
+  src: url("../assets/font/Marion-The-Essentials.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Gallient';
+  src: url("../assets/font/GallientRegular-eZoMp.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'Grotesk';
+  src: url("../assets/font/FoundersGrotesk.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: 'GroteskMid';
+  src: url("../assets/font/FoundersGrotesk-Medium.ttf") format("truetype");
+}
+
+/*Font Variables*/
+/*Theme Color*/
+* {
+  margin: 0;
+  padding: 0;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  cursor: none;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+  cursor: none;
+}
+
+/*Blend Mode Property*/
+.blend-Mode {
+  mix-blend-mode: exclusion;
+}
+
+/*Deafult Header Section Starts Here*/
+.default-Header {
+  position: fixed;
+  width: 100vw;
+  top: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  z-index: 30;
+}
+
+.default-Header .inner-default-header {
+  width: 92%;
+  padding: 4% 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.default-Header .inner-default-header h1 {
+  margin: 0;
+  padding: 0;
+  font-family: "GroteskMid";
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+
+.default-Header .inner-default-header .menuBar-Container {
+  display: inline-block;
+}
+
+.default-Header .inner-default-header .menuBar-Container .bar1, .default-Header .inner-default-header .menuBar-Container .bar2 {
+  width: 28px;
+  height: 2px;
+  background: #FFFFFF;
+  margin: 6px 0;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.magnetSpanLink {
+  display: inline-block;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  transition: -webkit-transform 0.1s linear;
+  transition: transform 0.1s linear;
+  transition: transform 0.1s linear, -webkit-transform 0.1s linear;
+}
+
+.magnetSpanLinkall {
+  display: inline-block;
+  -webkit-transition: -webkit-transform 0.1s linear;
+  transition: -webkit-transform 0.1s linear;
+  transition: transform 0.1s linear;
+  transition: transform 0.1s linear, -webkit-transform 0.1s linear;
+}
+
+/*Hamburger Menu Starts Here*/
+.hamMenu-Box {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: -130%;
+  background: #000000;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  z-index: 23;
+  /* Make sure 3 items are visible in the viewport by setting suitable font size. */
+}
+
+.hamMenu-Box .hamMenu {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  padding: 12% 0 25%;
+  --marquee-width: 100vw;
+  --offset: 20vw;
+  --move-initial: calc(-25% + var(--offset));
+  --move-final: calc(-50% + var(--offset));
+  --item-font-size: 7vw;
+  counter-reset: menu;
+}
+
+.hamMenu-Box .hamMenu .hamHover-reveal {
+  position: absolute;
+  top: -100%;
+  left: 8%;
+  width: 367px;
+  height: 700px;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transform: translate(0, -300px);
+          transform: translate(0, -300px);
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+
+.hamMenu-Box .hamMenu .hamHover-reveal .hamHover-reveal__inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  will-change: transform;
+  overflow: hidden;
+}
+
+.hamMenu-Box .hamMenu .hamHover-reveal .hamHover-reveal__img {
+  background-size: cover;
+  background-position: 50%, 50%;
+  -webkit-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  will-change: transform;
+  -webkit-transform: scale(0.8, 0.8);
+          transform: scale(0.8, 0.8);
+  -webkit-transition: 1.5s -webkit-transform;
+  transition: 1.5s -webkit-transform;
+  transition: 1.5s transform;
+  transition: 1.5s transform, 1.5s -webkit-transform;
+}
+
+.hamMenu-Box .hamMenu .hamHover-reveal .hamfirst {
+  background-image: url("../assets/jpeg/hamMenuImage/bevmo.png");
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.hamMenu-Box .hamMenu .hamHover-reveal .hamsecond {
+  background-image: url("../assets/jpeg/hamMenuImage/photograph.png");
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.hamMenu-Box .hamMenu .hamHover-reveal .hamthird {
+  background-image: url("../assets/jpeg/hamMenuImage/man.png");
+}
+
+.hamMenu-Box .hamMenu__item {
+  cursor: default;
+  position: relative;
+  padding: 0 5vw;
+  text-align: center;
+  font-family: "Marion";
+}
+
+.hamMenu-Box .hamMenu__item-link {
+  display: inline-block;
+  cursor: pointer;
+  position: relative;
+  color: white;
+  -webkit-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+}
+
+.hamMenu-Box .hamMarquee {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--marquee-width);
+  overflow: hidden;
+  pointer-events: none;
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
+  letter-spacing: 5px;
+}
+
+.hamMenu-Box .hamMarquee__inner {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-transform: translate3d(var(--move-initial), 0, 0);
+          transform: translate3d(var(--move-initial), 0, 0);
+  -webkit-animation: marquee 5s linear infinite;
+          animation: marquee 5s linear infinite;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  opacity: 0;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+}
+
+.hamMenu-Box .hamMenu__item-link:hover ~ .hamMarquee .hamMarquee__inner {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  opacity: 1;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  font-family: "Gallient";
+}
+
+.hamMenu-Box .hamMarquee span {
+  text-align: center;
+}
+
+.hamMenu-Box .hamMenu__item-link,
+.hamMenu-Box .hamMarquee span {
+  white-space: nowrap;
+  font-size: var(--item-font-size);
+  padding: 0 1vw;
+  text-transform: uppercase;
+  line-height: 1.15;
+  color: white;
+}
+
+@-webkit-keyframes marquee {
+  0% {
+    -webkit-transform: translate3d(var(--move-initial), 0, 0);
+            transform: translate3d(var(--move-initial), 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(var(--move-final), 0, 0);
+            transform: translate3d(var(--move-final), 0, 0);
+  }
+}
+
+@keyframes marquee {
+  0% {
+    -webkit-transform: translate3d(var(--move-initial), 0, 0);
+            transform: translate3d(var(--move-initial), 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(var(--move-final), 0, 0);
+            transform: translate3d(var(--move-final), 0, 0);
+  }
+}
+
+.hamMenu-Box .hamMarquee {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: var(--marquee-width);
+  overflow: hidden;
+  pointer-events: none;
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
+  letter-spacing: 5px;
+}
+
+.hamMenu-Box .hamMarquee__inner {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-transform: translate3d(var(--move-initial), 0, 0);
+          transform: translate3d(var(--move-initial), 0, 0);
+  -webkit-animation: marquee 5s linear infinite;
+          animation: marquee 5s linear infinite;
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+  opacity: 0;
+  -webkit-transition: opacity 0.1s;
+  transition: opacity 0.1s;
+}
+
+.hamMenu-Box .hamMenu__item-link:hover ~ .hamMarquee .hamMarquee__inner {
+  -webkit-animation-play-state: running;
+          animation-play-state: running;
+  opacity: 1;
+  -webkit-transition-duration: 0.4s;
+          transition-duration: 0.4s;
+  font-family: "Gallient";
+}
+
+.hamMenu-Box .hamMarquee span {
+  text-align: center;
+}
+
+.hamMenu-Box .hamMenu__item-link,
+.hamMenu-Box .hamMarquee span {
+  white-space: nowrap;
+  font-size: var(--item-font-size);
+  padding: 0 1vw;
+  text-transform: uppercase;
+  line-height: 1.15;
+  color: white;
+}
+
+@keyframes marquee {
+  0% {
+    -webkit-transform: translate3d(var(--move-initial), 0, 0);
+            transform: translate3d(var(--move-initial), 0, 0);
+  }
+  100% {
+    -webkit-transform: translate3d(var(--move-final), 0, 0);
+            transform: translate3d(var(--move-final), 0, 0);
+  }
+}
+
+.hamMenu-Box .hamSocial-Links {
+  width: 100%;
+  position: absolute;
+  bottom: 14%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-family: "Grotesk";
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  z-index: 25;
+}
+
+.hamMenu-Box .hamSocial-Links .hamEllipse {
+  visibility: hidden;
+  padding: 0 1%;
+}
+
+.hamMenu-Box .hamBottomMarque {
+  position: absolute;
+  width: 100%;
+  padding: 0 0 0 0;
+  margin: 0;
+  bottom: 8%;
+  z-index: 25;
+}
+
+.hamMenu-Box .hamBottomMarque .bottomMarquee {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.hamMenu-Box .hamBottomMarque .bottomMarquee .bottomInnerMarquee {
+  padding: 6px 0 0 0;
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+  background-color: #FFFFFF;
+}
+
+.hamMenu-Box .hamBottomMarque .bottomMarquee .bottomInnerMarquee span {
+  position: relative;
+  padding: 0;
+  overflow: visible;
+  font-family: "Gallient";
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #000000;
+  white-space: nowrap;
+}
+
+.hamMenu-Box .hamBottomMarque .bottomMarquee .bottomInnerMarquee span .HamArrow {
+  margin: 0 -6px 6px 0px;
+  width: 10px;
+  height: 10px;
+}
+
+.change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(2px, -2px);
+  transform: rotate(-45deg) translate(2px, -2px);
+}
+
+.change .bar2 {
+  -webkit-transform: rotate(45deg) translate(-8px, -8px);
+  transform: rotate(45deg) translate(-8px, -8px);
+}
+
+/*Hover Cursor Dot Magnet*/
+.cursor-Hover {
+  position: fixed;
+  width: 30px;
+  height: 30px;
+  background: white;
+  border-radius: 50px;
+  pointer-events: none;
+  -webkit-transition: 0s ease;
+  transition: 0s ease;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  mix-blend-mode: exclusion;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 30;
+}
+
+.cursor-Hover .visible-Hover {
+  padding-top: 2%;
+  font-family: "GroteskMid";
+  font-size: 0.2rem;
+  font-weight: 600;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  opacity: 0;
+}
+
+/*Page Transition Effect Starts Here*/
+.transition-1 {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 55;
+  background-color: antiquewhite;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transition: 5s ease-out;
+  transition: 5s ease-out;
+}
+
+.transition-1.is-active {
+  pointer-events: all;
+  opacity: 1;
+}
+
+.transition-2 {
+  position: fixed;
+  top: 0;
+  left: -100%;
+  width: 100vw;
+  bottom: 0;
+  z-index: 55;
+  background-color: antiquewhite;
+  -webkit-transition: 5s ease-out;
+  transition: 5s ease-out;
+}
+
+.transition-2.is-active {
+  left: 0px;
+}
+
+.transition-3 {
+  position: fixed;
+  top: 100%;
+  left: 0%;
+  width: 100vw;
+  height: 100vh;
+  z-index: 55;
+  background-color: #000000;
+  -webkit-transition: 1.5s ease-out;
+  transition: 1.5s ease-out;
+}
+
+.transition-3.is-active {
+  top: 0%;
+}
+
+.photo-stack img {
+  position: absolute;
+  width: 16%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  opacity: 0;
+}
+
+.photo-stack .loadImgOne {
+  z-index: 101;
+  top: 50%;
+  left: 50%;
+  -webkit-animation: imgOpa 0s 0.8s linear forwards;
+          animation: imgOpa 0s 0.8s linear forwards;
+}
+
+.photo-stack .loadImgTwo {
+  z-index: 100;
+  top: 48%;
+  left: 49%;
+  -webkit-animation: imgOpa 0s 0.7s linear forwards;
+          animation: imgOpa 0s 0.7s linear forwards;
+}
+
+.photo-stack .loadImgThree {
+  z-index: 99;
+  top: 51%;
+  left: 51%;
+  -webkit-animation: imgOpa 0s 0.6s linear forwards;
+          animation: imgOpa 0s 0.6s linear forwards;
+}
+
+.photo-stack .loadImgFour {
+  z-index: 98;
+  top: 48%;
+  left: 51%;
+  -webkit-animation: imgOpa 0s 0.5s linear forwards;
+          animation: imgOpa 0s 0.5s linear forwards;
+}
+
+.photo-stack .loadImgFive {
+  z-index: 97;
+  top: 56%;
+  left: 48%;
+  -webkit-animation: imgOpa 0s 0.4s linear forwards;
+          animation: imgOpa 0s 0.4s linear forwards;
+}
+
+.photo-stack .loadImgSix {
+  z-index: 96;
+  top: 54%;
+  left: 52%;
+  -webkit-animation: imgOpa 0s 0.3s linear forwards;
+          animation: imgOpa 0s 0.3s linear forwards;
+}
+
+.photo-stack .loadImgSevn {
+  z-index: 95;
+  top: 50%;
+  left: 48%;
+  -webkit-animation: imgOpa 0s 0.2s linear forwards;
+          animation: imgOpa 0s 0.2s linear forwards;
+}
+
+.photo-stack .loadImgEight {
+  z-index: 94;
+  top: 53%;
+  left: 52%;
+  -webkit-animation: imgOpa 0s 0.1s linear forwards;
+          animation: imgOpa 0s 0.1s linear forwards;
+}
+
+.photo-stack .loadImgNine {
+  z-index: 93;
+  top: 50%;
+  left: 50%;
+  -webkit-animation: imgOpa 0s 0s linear forwards;
+          animation: imgOpa 0s 0s linear forwards;
+}
+
+@-webkit-keyframes imgOpa {
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes imgOpa {
+  100% {
+    opacity: 1;
+  }
+}
+
+.cutText {
+  text-decoration: line-through;
+}
+
+@media only screen and (max-width: 2561px) {
+  /*Hamburger Menu Starts Here*/
+  .hamMenu-Box .hamMenu {
+    padding: 7% 0 25%;
+    --item-font-size: 6vw;
+  }
+  photo-stack img {
+    width: 12%;
+  }
+}
+
+@media only screen and (max-width: 1921px) {
+  .hamMenu-Box .hamMenu {
+    padding: 13% 0 25%;
+    --item-font-size: 7vw;
+  }
+}
+
+@media only screen and (max-width: 1537px) {
+  .hamMenu {
+    padding: 9% 0 25%;
+  }
+  /*.photo-stack{
+        
+    }*/
+}
+
+@media only screen and (max-width: 1441px) {
+  .hamMenu {
+    padding: 11% 0 25%;
+  }
+  photo-stack img {
+    width: 13%;
+  }
+}
+
+@media only screen and (max-width: 1367px) {
+  photo-stack img {
+    width: 31%;
+  }
+}
+
+@media only screen and (max-width: 1201px) {
+  .hamMenu {
+    padding: 14% 0 25%;
+  }
+  photo-stack img {
+    width: 16%;
+  }
+}
+
+/*Media Queries For Responsive Starts Here*/
+@media only screen and (max-width: 769px) {
+  .default-Header .inner-default-header {
+    width: 88%;
+    padding: 8% 0 0 0;
+  }
+  .default-Header .inner-default-header h1 {
+    font-size: 1rem;
+  }
+  .default-Header .inner-default-header .menuBar-Container .bar1, .default-Header .inner-default-header .menuBar-Container .bar2 {
+    width: 28px;
+  }
+  .hamHover-reveal {
+    display: none;
+  }
+  .cursor-Hover {
+    display: none;
+  }
+  .hamMenu-Box .hamMenu {
+    padding: 35% 0 25%;
+    --item-font-size: 13vw;
+  }
+  .hamMenu-Box .hamMenu__item-link {
+    opacity: 1;
+  }
+  .hamMenu-Box .hamMarquee {
+    visibility: hidden;
+  }
+  .hamMenu-Box .hamSocial-Links .hamEllipse {
+    margin: 0 3%;
+    visibility: visible;
+    height: 0.4em;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width: 429px) {
+  .default-Header .inner-default-header h1 {
+    font-size: 0.8rem;
+  }
+  .default-Header .inner-default-header .menuBar-Container .bar1, .default-Header .inner-default-header .menuBar-Container .bar2 {
+    width: 24px;
+  }
+  .hamMenu-Box .hamMenu {
+    padding: 66% 0 25%;
+    --item-font-size: 18vw;
+  }
+  .hamMenu-Box .hamSocial-Links {
+    bottom: 17%;
+    font-size: 1rem;
+  }
+  .hamMenu-Box .hamBottomMarque .bottomMarquee .bottomInnerMarquee span {
+    font-size: 1.2rem;
+  }
+  .photo-stack img {
+    width: 29%;
+  }
+}
+
+@media only screen and (max-width: 394px) {
+  /*Hamburger Menu Starts Here*/
+}
+
+/* Main Banner Section Starts Here*/
+.mainBanner {
+  position: relative;
+  width: 100vw;
+  height: 143em;
+  text-align: center;
+  z-index: 5;
+  background-color: #000000;
+  mix-blend-mode: exclusion;
+  /*.balckBGCircle{
+        position: absolute;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        mix-blend-mode: exclusion;
+        z-index: 7;
+    }*/
+  /*.mainBannerMan{
+        position: absolute;
+        width: 55%;
+        top: 4%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 9;
+    }*/
+}
+
+.mainBanner .balckBGCircle {
+  position: absolute;
+  width: 100%;
+  height: 143em;
+  margin: 2% 0 0 0;
+  background-image: url("../assets/png/andafine2.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: center top;
+  z-index: 7;
+}
+
+.mainBanner .allMarques {
+  position: absolute;
+  margin: 96% 0 0 0;
+  padding: 0;
+  width: 100%;
+  z-index: 8;
+  overflow: hidden;
+}
+
+.mainBanner .allMarques .comnMarque {
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.mainBanner .allMarques .comnMarque span {
+  position: relative;
+  padding: 0;
+  overflow: visible;
+  color: #FFFFFF;
+  font-family: "Gallient";
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  letter-spacing: 1.5px;
+  white-space: nowrap;
+}
+
+.mainBanner .allMarques .comnMarque span .lilStar {
+  margin: 0 0 4px 0;
+  width: 10px;
+  height: 10px;
+}
+
+.mainBanner .allMarques .skillsMarque {
+  margin: 2% 0 0 0;
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
+}
+
+.mainBanner .allMarques .rollsMarque {
+  margin: 7% 0 0 0;
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+}
+
+.mainBanner .allMarques .iskconMarque {
+  margin: 8% 0 0 0;
+  -webkit-transform: rotate(2deg);
+          transform: rotate(2deg);
+}
+
+.mainBanner .allMarques .hobbiesMarque {
+  margin: 9% 0 0 0;
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+}
+
+.mainBanner .allMarques .artistMarque {
+  margin: 5% 0 0 0;
+}
+
+.mainBanner .mainBannerMan {
+  position: absolute;
+  top: 4%;
+  width: 100%;
+  height: 140em;
+  background-image: url("../assets/png/meBanner.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: 55%;
+  z-index: 9;
+}
+
+.mainBanner .mainBannerText {
+  position: absolute;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  z-index: 10;
+  font-family: "Marion";
+  text-transform: uppercase;
+  letter-spacing: 0.035em;
+  text-align: center;
+  color: #FFFFFF;
+  overflow: hidden;
+}
+
+.mainBanner .mainBannerText .youAre {
+  margin: 3vh 0 0 0;
+  font-size: 6.5rem;
+}
+
+.mainBanner .mainBannerText .viewing {
+  font-size: 13rem;
+  line-height: 10vh;
+}
+
+.mainBanner .mainBannerText .abhishekK {
+  font-size: 20rem;
+  line-height: 14vh;
+}
+
+.mainBanner .mainBannerText .portfolio {
+  font-size: 13rem;
+  line-height: 10vh;
+}
+
+.mainBanner .MainSelfInfoOne {
+  position: absolute;
+  margin: 69% 0 0 0;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: left;
+  color: #FFFFFF;
+  font-family: "Grotesk";
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  z-index: 10;
+}
+
+.mainBanner .threeStar {
+  position: absolute;
+  margin: 69% 0 0 0;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  z-index: 10;
+}
+
+.mainBanner .threeStar .largeStar {
+  width: 2.5em;
+}
+
+.mainBanner .threeStar .midStar {
+  width: 2em;
+}
+
+.mainBanner .threeStar .smallStar {
+  width: 1.5em;
+}
+
+.mainBanner .threeStar img {
+  margin: 0 0 1% 0;
+}
+
+/* Decipline Section Starts Here*/
+.deciplinesSection {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 6% 0 0 0;
+  font-family: "Marion";
+  font-size: 11rem;
+  letter-spacing: 0.035em;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #000000;
+  color: #FFFFFF;
+  z-index: 5;
+}
+
+/* Main Self Info Two Section Starts Here*/
+.mainSelfInfoTwo {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 25% 0 0 0;
+  font-family: "Grotesk";
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  background: #000000;
+  z-index: 5;
+}
+
+/* White Star Section Starts Here*/
+.whiteStarSection {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 25% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #000000;
+  z-index: 5;
+}
+
+.whiteStarSection img {
+  width: 2.5em;
+}
+
+/* Featured Work Section Starts Here*/
+.featuredSection {
+  position: relative;
+  width: 100%;
+  height: auto;
+  letter-spacing: 0.3em;
+  background-color: #000000;
+  overflow: hidden;
+  z-index: 5;
+  /*Featured Work 001 Starts Here*/
+  /*Featured Work 002 & 003 Starts Here*/
+}
+
+.featuredSection p {
+  margin: 0;
+  font-family: "Marion";
+  font-size: 10rem;
+  padding: 0 0 4% 9%;
+}
+
+.featuredSection .featuredWorkImage {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 66em;
+  background-image: url("../assets/png/evmo.png");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+}
+
+.featuredSection .featuredWorkImage .bevmoNum {
+  font-family: "Grotesk";
+  font-size: 1.5rem;
+  letter-spacing: 0;
+  padding: 12% 0 0 10%;
+}
+
+.featuredSection .featuredWorkImage .bevmoText {
+  font-family: "Marion";
+  font-size: 26rem;
+  line-height: 72%;
+  padding: 5% 0 0 5%;
+}
+
+.featuredSection .bevmoPara {
+  position: absolute;
+  margin: -18% 0 0 18%;
+  font-family: "Grotesk";
+  font-size: 1.2rem;
+  letter-spacing: 0px;
+  z-index: 8;
+}
+
+.featuredSection .featuredMenu {
+  position: relative;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-family: "Marion";
+}
+
+.featuredSection .featuredMenu .featuredMenu-item {
+  position: relative;
+  padding: 20% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+
+.featuredSection .featuredMenu .featuredMenu-item .featuredNumber {
+  font-family: "Grotesk";
+  font-size: 1.5rem;
+  letter-spacing: 0;
+  margin: 0 7% 0 7%;
+}
+
+.featuredSection .featuredMenu .featuredMenu-item .featuredParentRotateDiv {
+  position: relative;
+  margin: 1rem;
+}
+
+.featuredSection .featuredMenu .featuredMenu-item .featuredParentRotateDiv::before {
+  position: absolute;
+  left: -15px;
+  top: 0;
+  width: auto;
+}
+
+.featuredSection .featuredMenu .featuredMenu-item .featuredMenu__item-text {
+  pointer-events: none;
+  display: block;
+  line-height: 1;
+  position: relative;
+}
+
+.featuredSection .featuredMenu .featuredMenu-item .featuredParentRotateDiv > div {
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  overflow: hidden;
+}
+
+.featuredSection .featuredMenu .featuredMenu-item .featuredParentRotateDiv > div:nth-child(1) span {
+  will-change: transform;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-delay: calc(0.05s * var(--index));
+          transition-delay: calc(0.05s * var(--index));
+  -webkit-transform-origin: bottom;
+          transform-origin: bottom;
+  display: inline-block;
+}
+
+.featuredSection .featuredMenu .featuredMenu-item .featuredParentRotateDiv > div:nth-child(2) span {
+  will-change: transform;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  -webkit-transition-delay: calc(0.05s * var(--index));
+          transition-delay: calc(0.05s * var(--index));
+  -webkit-transform-origin: top;
+          transform-origin: top;
+  display: inline-block;
+  -webkit-transform: translate3d(0, 100%, 0) rotateX(90deg);
+          transform: translate3d(0, 100%, 0) rotateX(90deg);
+}
+
+.featuredSection .featuredMenu .featuredMenu-item .featuredParentRotateDiv:hover > div:nth-child(1) span {
+  -webkit-transform: translate3d(0, -100%, 0) rotateX(-90deg);
+          transform: translate3d(0, -100%, 0) rotateX(-90deg);
+}
+
+.featuredSection .featuredMenu .featuredMenu-item .featuredParentRotateDiv:hover > div:nth-child(2) span {
+  -webkit-transform: translate3d(0, 0%, 0) rotateX(0deg);
+          transform: translate3d(0, 0%, 0) rotateX(0deg);
+}
+
+.featuredSection .featuredMenu .featuredMenu-item span {
+  font-size: 13rem;
+}
+
+.featuredSection .featuredMenu .featuredMenu-item .featuredHover-reveal {
+  position: absolute;
+  top: 8%;
+  left: 0;
+  width: 367px;
+  height: 700px;
+  opacity: 0;
+  pointer-events: none;
+  -webkit-transform: translate(0, -300px);
+          transform: translate(0, -300px);
+  -webkit-transition: 0.2s ease-out;
+  transition: 0.2s ease-out;
+}
+
+.featuredSection .featuredMenu .featuredMenu-item .featuredHover-reveal .featuredHover-reveal__inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  will-change: transform;
+  overflow: hidden;
+}
+
+.featuredSection .featuredMenu .featuredMenu-item .featuredHover-reveal .featuredHover-reveal__img {
+  background-size: cover;
+  background-position: 50%, 50%;
+  -webkit-transform-origin: 50% 100%;
+          transform-origin: 50% 100%;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  will-change: transform;
+  -webkit-transform: scale(0.8, 0.8);
+          transform: scale(0.8, 0.8);
+  -webkit-transition: 1.5s -webkit-transform;
+  transition: 1.5s -webkit-transform;
+  transition: 1.5s transform;
+  transition: 1.5s transform, 1.5s -webkit-transform;
+}
+
+.featuredSection .featuredMenu .featuredMenu-item .featuredHover-reveal .first {
+  background-image: url("../assets/png/casade.png");
+}
+
+.featuredSection .featuredMenu .featuredMenu-item .featuredHover-reveal .second {
+  background-image: url("../assets/png/monoglass.png");
+}
+
+/* More Work Section Starts Here*/
+.moreWorkSection {
+  position: relative;
+  width: 100%;
+  height: auto;
+  padding: 22.5% 0 0 0;
+  z-index: 5;
+  background-color: #000000;
+}
+
+.moreWorkSection .moreWorkMarquee {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #000000;
+  z-index: 5;
+}
+
+.moreWorkSection .moreWorkMarquee .moreWorkInnerMarquee {
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.moreWorkSection .moreWorkMarquee .moreWorkInnerMarquee span {
+  position: relative;
+  padding: 0;
+  overflow: visible;
+  font-family: "Gallient";
+  text-transform: uppercase;
+  font-size: 5.5rem;
+  letter-spacing: 1px;
+  white-space: nowrap;
+  color: #FFFFFF;
+}
+
+.moreWorkSection .moreWorkMarquee .moreWorkInnerMarquee span .moreWorkArrow {
+  width: 0.6em;
+}
+
+/* White Star Section Starts Here*/
+.whiteStarSection2 {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 8% 0 0 0;
+  padding: 25% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #000000;
+  z-index: 5;
+}
+
+.whiteStarSection2 img {
+  width: 2.5em;
+}
+
+/* About Me Section Starts Here*/
+.aboutMeSection {
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: 14;
+  margin: 0 0 12% 0;
+}
+
+.aboutMeSection .aboutMeMarquee {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #000000;
+}
+
+.aboutMeSection .aboutMeMarquee .aboutMeInnerMarquee {
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+}
+
+.aboutMeSection .aboutMeMarquee .aboutMeInnerMarquee span {
+  position: relative;
+  padding: 0;
+  overflow: visible;
+  font-family: "Gallient";
+  text-transform: uppercase;
+  font-size: 10rem;
+  letter-spacing: 1px;
+  color: #000000;
+  white-space: nowrap;
+  color: #FFFFFF;
+}
+
+.aboutMeSection .aboutMeMarquee .aboutMeInnerMarquee span .aboutMeArrow {
+  width: 0.6em;
+}
+
+/* Main Self Info Two Section Starts Here*/
+.mainSelfInfoThree {
+  position: relative;
+  width: 100%;
+  height: auto;
+  margin: 14% 0 0 0;
+  padding: 25% 0;
+  z-index: 5;
+  background-color: #000000;
+}
+
+.mainSelfInfoThree .innerMainSelfInfoThree {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Grotesk";
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
+
+.mainSelfInfoThree .innerMainSelfInfoThree p {
+  padding: 0;
+  margin: 0;
+}
+
+/* Reach Me Out Section Starts Here*/
+.reachMeOutSection {
+  position: relative;
+  width: 100%;
+  height: auto;
+  height: 74em;
+  background-color: #000000;
+  z-index: 5;
+}
+
+.reachMeOutSection .reachMeInnerCircle {
+  margin: 21.5% 0 0 0;
+  position: absolute;
+  width: 445px;
+  height: 445px;
+  border: 1px solid #000000;
+  border-radius: 50%;
+  z-index: 8;
+  background-color: #FFFFFF;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.reachMeOutSection .reachMeManIamge {
+  width: 28.5%;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+  z-index: 9;
+}
+
+.reachMeOutSection .social-Links {
+  width: 24%;
+  position: absolute;
+  margin: 22% 0 0 39%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-transform: rotate(270deg);
+          transform: rotate(270deg);
+  font-family: "Grotesk";
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  z-index: 9;
+}
+
+.reachMeOutSection .social-Links .ellipse {
+  visibility: hidden;
+}
+
+.reachMeOutSection .allReachMeMarques {
+  position: absolute;
+  margin: 16.5% 0 0 0;
+  padding: 0;
+  width: 100%;
+  z-index: 3;
+  overflow: hidden;
+}
+
+.reachMeOutSection .allReachMeMarques .comnReachMeMarque {
+  padding: 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.reachMeOutSection .allReachMeMarques .comnReachMeMarque span {
+  position: relative;
+  padding: 0;
+  overflow: visible;
+  color: #FFFFFF;
+  font-family: "Gallient";
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  letter-spacing: 1.5px;
+  line-height: 1.5em;
+  white-space: nowrap;
+}
+
+.reachMeOutSection .allReachMeMarques .comnReachMeMarque span .reachMeArrow {
+  width: 0.6em;
+}
+
+/* card Section Starts Here*/
+#blackVCardDrag {
+  position: absolute;
+  width: 34%;
+  top: 638em;
+  left: 2%;
+  z-index: 16;
+  cursor: move;
+}
+
+#blackVCardDrag:hover ~ .cursor-Hover {
+  display: none;
+}
+
+#whiteVCardDrag {
+  position: absolute;
+  width: 34%;
+  right: 0;
+  top: 658em;
+  z-index: 16;
+  cursor: move;
+}
+
+#whiteVCardDrag:hover ~ .cursor-Hover {
+  display: none;
+}
+
+/* Footer Starts Here*/
+.footerSection {
+  position: relative;
+  width: 100%;
+  padding: 0 0 0 0;
+  margin: 0;
+  bottom: 0;
+  z-index: 5;
+}
+
+.footerSection .footerMarquee {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.footerSection .footerMarquee .footerInnerMarquee {
+  padding: 6px 0 0 0;
+  overflow: hidden;
+  width: 100%;
+  white-space: nowrap;
+  background-color: #FFFFFF;
+}
+
+.footerSection .footerMarquee .footerInnerMarquee span {
+  position: relative;
+  padding: 0;
+  overflow: visible;
+  font-family: "Gallient";
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: #000000;
+  white-space: nowrap;
+}
+
+.footerSection .footerMarquee .footerInnerMarquee span .moreWorkArrow {
+  margin: 0 -6px 6px 0px;
+  width: 10px;
+  height: 10px;
+}
+
+/*Media Queries For Responsive Starts Here*/
+@media only screen and (max-width: 2561px) {
+  .mainBanner .balckBGCircle {
+    height: 226em;
+  }
+  .mainBanner .mainBannerMan {
+    height: 222em;
+    top: 6%;
+  }
+  .mainBanner .mainBannerText .youAre {
+    margin: 12% 0 0 0;
+    font-size: 7rem;
+  }
+  .mainBanner .mainBannerText .viewing {
+    font-size: 14rem;
+    line-height: 74%;
+  }
+  .mainBanner .mainBannerText .abhishekK {
+    font-size: 20rem;
+    line-height: 71%;
+  }
+  .mainBanner .mainBannerText .portfolio {
+    font-size: 13rem;
+    line-height: 70%;
+  }
+  .deciplinesSection {
+    margin: 56% 0 0 0;
+  }
+  .featuredSection .bevmoPara {
+    margin: -11% 0 0 17%;
+  }
+  .featuredSection .featuredMenu .featuredMenu-item {
+    padding: 15% 0;
+  }
+  .featuredSection .featuredMenu .featuredMenu-item .featuredHover-reveal {
+    top: 20%;
+  }
+  .reachMeOutSection .reachMeInnerCircle {
+    margin: 19.5% 0 0 0;
+  }
+  .reachMeOutSection .reachMeManIamge {
+    width: 21%;
+  }
+  .reachMeOutSection .social-Links {
+    width: 16%;
+    margin: 18% 0 0 43%;
+  }
+  #blackVCardDrag {
+    width: 28%;
+    top: 906em;
+    left: 8%;
+  }
+  #whiteVCardDrag {
+    width: 28%;
+    right: 7%;
+    top: 921em;
+  }
+}
+
+@media only screen and (max-width: 1921px) {
+  .mainBanner .mainBannerMan {
+    top: 4%;
+  }
+  .deciplinesSection {
+    margin: 28% 0 0 0;
+  }
+  .featuredSection .bevmoPara {
+    margin: -15% 0 0 17%;
+  }
+  .featuredSection .featuredMenu .featuredMenu-item {
+    padding: 20% 0;
+  }
+  .featuredSection .featuredMenu .featuredMenu-item .featuredHover-reveal {
+    top: 20%;
+  }
+  .reachMeOutSection .reachMeInnerCircle {
+    margin: 19.5% 0 0 0;
+  }
+  .reachMeOutSection .reachMeManIamge {
+    width: 24%;
+  }
+  .reachMeOutSection .social-Links {
+    width: 19%;
+    margin: 19% 0 0 41%;
+  }
+  .reachMeOutSection .allReachMeMarques {
+    margin: 15.5% 0 0 0;
+  }
+  #blackVCardDrag {
+    width: 30%;
+    top: 754em;
+    left: 5%;
+  }
+  #whiteVCardDrag {
+    width: 30%;
+    right: 5%;
+    top: 769em;
+  }
+}
+
+@media only screen and (max-width: 1729px) {
+  .reachMeOutSection .reachMeManIamge {
+    width: 25.5%;
+  }
+  #blackVCardDrag {
+    top: 710em;
+  }
+  #whiteVCardDrag {
+    top: 728em;
+  }
+}
+
+@media only screen and (max-width: 1537px) {
+  .mainBanner .mainBannerText .youAre {
+    margin: 8% 0 0 0;
+    font-size: 7rem;
+  }
+  .deciplinesSection {
+    margin: 0;
+  }
+  .featuredSection {
+    /*Featured Work 002 & 003 Starts Here*/
+  }
+  .featuredSection .bevmoPara {
+    margin: -18% 0 0 17%;
+  }
+  .featuredSection .featuredMenu .featuredMenu-item .featuredHover-reveal .featuredHover-reveal__img {
+    width: 85%;
+    height: 85%;
+  }
+  .reachMeOutSection .reachMeInnerCircle {
+    margin: 20.5% 0 0 0;
+  }
+  .reachMeOutSection .reachMeManIamge {
+    width: 28%;
+  }
+  .reachMeOutSection .social-Links {
+    width: 24%;
+    margin: 22% 0 0 39%;
+  }
+  #blackVCardDrag {
+    width: 34%;
+    top: 638em;
+    left: 2%;
+  }
+  #whiteVCardDrag {
+    width: 34%;
+    right: 0%;
+    top: 658em;
+  }
+}
+
+@media only screen and (max-width: 1441px) {
+  .mainBanner .mainBannerText .youAre {
+    font-size: 6rem;
+  }
+  .mainBanner .mainBannerText .viewing {
+    font-size: 12rem;
+  }
+  .mainBanner .mainBannerText .abhishekK {
+    font-size: 20rem;
+  }
+  .mainBanner .mainBannerText .portfolio {
+    font-size: 13rem;
+  }
+  .deciplinesSection {
+    font-size: 10rem;
+  }
+  .featuredSection .bevmoPara {
+    margin: -19% 0 0 17%;
+  }
+  .reachMeOutSection .reachMeManIamge {
+    width: 29%;
+  }
+  #blackVCardDrag {
+    width: 32%;
+    top: 614em;
+    left: 3%;
+  }
+  #whiteVCardDrag {
+    width: 32%;
+    right: 0%;
+    top: 635em;
+  }
+}
+
+@media only screen and (max-width: 1367px) {
+  .mainBanner {
+    height: 130em;
+  }
+  .mainBanner .mainBannerText .youAre {
+    margin: 9% 0 0 0;
+    font-size: 5rem;
+  }
+  .mainBanner .mainBannerText .viewing {
+    font-size: 11rem;
+  }
+  .mainBanner .mainBannerText .abhishekK {
+    font-size: 18rem;
+  }
+  .mainBanner .mainBannerText .portfolio {
+    font-size: 12rem;
+  }
+  .reachMeOutSection .reachMeInnerCircle {
+    margin: 21% 0 0 0;
+  }
+  .reachMeOutSection .reachMeManIamge {
+    width: 30.5%;
+  }
+  .reachMeOutSection .social-Links {
+    font-size: 1rem;
+  }
+  #blackVCardDrag {
+    top: 588em;
+  }
+  #whiteVCardDrag {
+    top: 608em;
+  }
+}
+
+@media only screen and (max-width: 1201px) {
+  .mainBanner {
+    height: 113em;
+  }
+  .mainBanner .mainBannerText .youAre {
+    font-size: 5rem;
+  }
+  .mainBanner .mainBannerText .viewing {
+    font-size: 10rem;
+  }
+  .mainBanner .mainBannerText .abhishekK {
+    font-size: 16rem;
+  }
+  .mainBanner .mainBannerText .portfolio {
+    font-size: 10rem;
+  }
+  .deciplinesSection {
+    font-size: 9rem;
+  }
+  .featuredSection p {
+    font-size: 7rem;
+  }
+  .featuredSection .featuredWorkImage {
+    height: 68em;
+  }
+  .featuredSection .featuredWorkImage .bevmoNum {
+    font-size: 1.2rem;
+    padding: 13% 0 0 8%;
+  }
+  .featuredSection .featuredWorkImage .bevmoText {
+    font-size: 22rem;
+    line-height: 68%;
+  }
+  .featuredSection .bevmoPara {
+    margin: -23% 0 0 17%;
+  }
+  .featuredSection .featuredMenu .featuredMenu-item .featuredNumber {
+    font-size: 1.2rem;
+    margin: 0 5% 0 8%;
+  }
+  .featuredSection .featuredMenu .featuredMenu-item span {
+    font-size: 10rem;
+  }
+  .reachMeOutSection {
+    height: 61em;
+  }
+  .reachMeOutSection .reachMeInnerCircle {
+    width: 400px;
+    height: 400px;
+    margin: 21% 0 0 0;
+  }
+  .reachMeOutSection .reachMeManIamge {
+    width: 30.5%;
+  }
+  .reachMeOutSection .social-Links {
+    font-size: 1rem;
+  }
+  .reachMeOutSection .allReachMeMarques .comnReachMeMarque span {
+    font-size: 1.6rem;
+    line-height: 1.4em;
+  }
+  #blackVCardDrag {
+    top: 525em;
+  }
+  #whiteVCardDrag {
+    top: 544em;
+  }
+}
+
+@media only screen and (max-width: 769px) {
+  /* Main Banner Section Starts Here*/
+  .mainBanner {
+    height: 114em;
+  }
+  .mainBanner .balckBGCircle {
+    margin: 10% 0 0 0;
+    height: 99em;
+    background-image: url("../assets/png/mobileHeroBanner.png");
+  }
+  .mainBanner .mainBannerMan {
+    top: 13%;
+    height: 106em;
+    background-size: 74%;
+  }
+  .mainBanner .mainBannerText .youAre {
+    margin: 74% 0 0 0;
+    font-size: 4.5rem;
+  }
+  .mainBanner .mainBannerText .viewing {
+    font-size: 6rem;
+    line-height: 74%;
+  }
+  .mainBanner .mainBannerText .abhishekK {
+    font-size: 9rem;
+    line-height: 74%;
+  }
+  .mainBanner .mainBannerText .portfolio {
+    font-size: 7rem;
+    line-height: 74%;
+  }
+  .mainBanner .threeStar {
+    margin: 142% 0 0 0;
+  }
+  .mainBanner .threeStar .largeStar {
+    width: 2em;
+  }
+  .mainBanner .threeStar .midStar {
+    width: 1.5em;
+  }
+  .mainBanner .threeStar .smallStar {
+    width: 1em;
+  }
+  .mainBanner .allMarques {
+    margin: 162% 0 0 0;
+  }
+  .mainBanner .allMarques .comnMarque span {
+    font-size: 1.2rem;
+  }
+  .mainBanner .allMarques .comnMarque span .lilStar {
+    margin: 0 0 2px 0;
+    /*width: 10px;
+                        height: 10px;*/
+  }
+  /* Decipline Section Starts Here*/
+  .deciplinesSection {
+    padding: 0 0 0 0;
+    font-size: 5.5rem;
+  }
+  /* Featured Work Section Starts Here*/
+  .featuredSection {
+    /*Featured Work 001 Starts Here*/
+    /*Featured Work 002 & 003 Starts Here*/
+  }
+  .featuredSection p {
+    font-size: 4rem;
+    padding: 0 0 4% 6%;
+  }
+  .featuredSection .featuredWorkImage {
+    height: 32em;
+  }
+  .featuredSection .featuredWorkImage .bevmoNum {
+    padding: 12% 0 0 6%;
+  }
+  .featuredSection .featuredWorkImage .bevmoText {
+    font-size: 12rem;
+    padding: 6% 0 0 12%;
+  }
+  .featuredSection .bevmoPara {
+    margin: -20% 0 0 24%;
+    font-size: 1rem;
+  }
+  .featuredSection .featuredMenu .featuredMenu-item {
+    padding: 8% 0;
+  }
+  .featuredSection .featuredMenu .featuredMenu-item .featuredNumber {
+    font-size: 1.2rem;
+    margin: 0 11% 0 6%;
+  }
+  .featuredSection .featuredMenu .featuredMenu-item .featuredHover-reveal {
+    display: none;
+  }
+  .featuredSection .featuredMenu .featuredMenu-item span {
+    font-size: 6rem;
+  }
+  /* More Work Section Starts Here*/
+  .moreWorkSection {
+    padding: 12% 0 0 0;
+  }
+  .moreWorkSection .moreWorkMarquee .moreWorkInnerMarquee span {
+    font-size: 4rem;
+  }
+  /* White Star Section Starts Here*/
+  .whiteStarSection2 {
+    margin: 10% 0 0 0;
+    padding: 24% 0;
+  }
+  /* About Me Section Starts Here*/
+  .aboutMeSection .aboutMeMarquee .aboutMeInnerMarquee span {
+    font-size: 6rem;
+  }
+  /* Reach Me Out Section Starts Here*/
+  .reachMeOutSection {
+    height: 53em;
+  }
+  .reachMeOutSection .reachMeInnerCircle {
+    margin: 29% 0 0 0;
+    width: 400px;
+    height: 400px;
+  }
+  .reachMeOutSection .reachMeManIamge {
+    width: 46%;
+  }
+  .reachMeOutSection .social-Links {
+    margin: 96% 0 0 0;
+    width: 100%;
+    font-size: 1.2rem;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    left: unset;
+    -webkit-transform: unset;
+            transform: unset;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .reachMeOutSection .social-Links .ellipse {
+    margin: 0 4%;
+    visibility: visible;
+    height: 0.4em;
+  }
+  .reachMeOutSection .allReachMeMarques {
+    margin: 25% 0 0 0;
+  }
+  .reachMeOutSection .allReachMeMarques .comnReachMeMarque span {
+    font-size: 1.5rem;
+  }
+  /* card Section Starts Here*/
+  #blackVCardDrag {
+    display: none;
+  }
+  #whiteVCardDrag {
+    width: 70%;
+    right: unset;
+    top: 345em;
+    left: 50%;
+    -webkit-transform: translate(-50%) !important;
+            transform: translate(-50%) !important;
+  }
+  /* Footer Starts Here*/
+  .footerSection .footerMarquee .footerInnerMarquee span {
+    font-size: 1.2rem;
+  }
+  .footerSection .footerMarquee .footerInnerMarquee .moreWorkArrow {
+    margin: 0 -4px 4px 0px;
+  }
+}
+
+@media only screen and (max-width: 429px) {
+  .mainBanner {
+    height: 62em;
+  }
+  .mainBanner .balckBGCircle {
+    margin: 18% 0 0 0;
+    height: 55em;
+  }
+  .mainBanner .mainBannerMan {
+    top: 17%;
+    height: 51em;
+    background-size: 74%;
+  }
+  .mainBanner .mainBannerText .youAre {
+    margin: 80% 0 0 0;
+    font-size: 2.5rem;
+  }
+  .mainBanner .mainBannerText .viewing {
+    font-size: 3.5rem;
+    line-height: 80%;
+  }
+  .mainBanner .mainBannerText .abhishekK {
+    font-size: 5rem;
+    line-height: 72%;
+  }
+  .mainBanner .mainBannerText .portfolio {
+    font-size: 3rem;
+    line-height: 78%;
+  }
+  .mainBanner .threeStar .largeStar {
+    width: 1.5em;
+  }
+  .mainBanner .threeStar .midStar {
+    width: 1em;
+  }
+  .mainBanner .threeStar .smallStar {
+    width: 0.5em;
+  }
+  .mainBanner .allMarques {
+    margin: 165% 0 0 0;
+  }
+  .mainBanner .allMarques .comnMarque span {
+    font-size: 0.7rem;
+  }
+  .mainBanner .allMarques .comnMarque span .lilStar {
+    margin: 0 0 0 0;
+  }
+  .deciplinesSection {
+    padding: 12% 0 0 0;
+    font-size: 3rem;
+  }
+  /* Main Self Info Two Section Starts Here*/
+  .mainSelfInfoTwo {
+    font-size: 0.8rem;
+  }
+  /* White Star Section Starts Here*/
+  .whiteStarSection img {
+    width: 1.5em;
+  }
+  /* Featured Work Section Starts Here*/
+  .featuredSection {
+    /*Featured Work 001 Starts Here*/
+    /*Featured Work 002 & 003 Starts Here*/
+  }
+  .featuredSection p {
+    font-size: 2rem;
+  }
+  .featuredSection .featuredWorkImage {
+    height: 32em;
+  }
+  .featuredSection .featuredWorkImage .bevmoNum {
+    font-size: 1rem;
+    padding: 18% 0 0 6%;
+  }
+  .featuredSection .featuredWorkImage .bevmoText {
+    font-size: 6rem;
+    padding: 14% 0 0 12%;
+  }
+  .featuredSection .bevmoPara {
+    margin: -65% 0 0 24%;
+    font-size: 1rem;
+  }
+  .featuredSection .featuredMenu .featuredMenu-item .featuredNumber {
+    font-size: 1rem;
+    margin: 0 11% 0 6%;
+  }
+  .featuredSection .featuredMenu .featuredMenu-item span {
+    font-size: 2.8rem;
+  }
+  /* More Work Section Starts Here*/
+  .moreWorkSection {
+    padding: 10% 0 0 0;
+  }
+  .moreWorkSection .moreWorkMarquee .moreWorkInnerMarquee span {
+    font-size: 3rem;
+  }
+  /* White Star Section Starts Here*/
+  .whiteStarSection2 {
+    margin: 14% 0 0 0;
+  }
+  .whiteStarSection2 img {
+    width: 1.5em;
+  }
+  /* About Me Section Starts Here*/
+  .aboutMeSection .aboutMeMarquee .aboutMeInnerMarquee span {
+    font-size: 4rem;
+  }
+  /* Main Self Info Two Section Starts Here*/
+  .mainSelfInfoThree .innerMainSelfInfoThree {
+    font-size: 0.8rem;
+  }
+  /* Reach Me Out Section Starts Here*/
+  .reachMeOutSection {
+    height: 26em;
+  }
+  .reachMeOutSection .reachMeInnerCircle {
+    width: 196px;
+    height: 196px;
+  }
+  .reachMeOutSection .reachMeManIamge {
+    width: 42%;
+  }
+  .reachMeOutSection .social-Links {
+    margin: 84% 0 0 0%;
+    font-size: 0.8rem;
+  }
+  .reachMeOutSection .allReachMeMarques {
+    margin: 24% 0 0 0;
+  }
+  .reachMeOutSection .allReachMeMarques .comnReachMeMarque span {
+    font-size: 1rem;
+  }
+  .reachMeOutSection .allReachMeMarques .hide-Me {
+    display: none;
+  }
+  #whiteVCardDrag {
+    top: 208em;
+  }
+}
+
+@media only screen and (max-width: 413px) {
+  .reachMeOutSection .reachMeManIamge {
+    width: 43%;
+  }
+  .reachMeOutSection .social-Links {
+    margin: 87% 0 0 0%;
+    font-size: 0.7rem;
+  }
+  #whiteVCardDrag {
+    width: 64%;
+    top: 206em;
+  }
+}
+
+@media only screen and (max-width: 394px) {
+  .deciplinesSection {
+    font-size: 2.8rem;
+  }
+  .reachMeOutSection .reachMeManIamge {
+    width: 44.5%;
+  }
+  .reachMeOutSection .social-Links {
+    margin: 90% 0 0 0%;
+  }
+  #whiteVCardDrag {
+    top: 202em;
+  }
+  .footerSection .footerMarquee .footerInnerMarquee span {
+    font-size: 1rem;
+  }
+  .footerSection .footerMarquee .footerInnerMarquee span .moreWorkArrow {
+    margin: 0 -4px 4px 0px;
+  }
+}
+
+@media only screen and (max-width: 391px) {
+  .reachMeOutSection .social-Links {
+    margin: 91% 0 0 0%;
+  }
+  #whiteVCardDrag {
+    top: 201em;
+  }
+}
+
+@media only screen and (max-width: 377px) {
+  /* Main Banner Section Starts Here*/
+  .mainBanner {
+    height: 58em;
+  }
+  .mainBanner .balckBGCircle {
+    margin: 20% 0 0 0;
+  }
+  .mainBanner .mainBannerMan {
+    height: 54em;
+  }
+  .mainBanner .mainBannerText .youAre {
+    margin: 84% 0 0 0;
+    font-size: 2.5rem;
+  }
+  .mainBanner .mainBannerText .viewing {
+    font-size: 3.5rem;
+  }
+  .mainBanner .mainBannerText .abhishekK {
+    font-size: 4.5rem;
+  }
+  .mainBanner .mainBannerText .portfolio {
+    font-size: 3rem;
+  }
+  .mainBanner .threeStar {
+    margin: 150% 0 0 0;
+  }
+  .mainBanner .threeStar .largeStar {
+    width: 1.5em;
+  }
+  .mainBanner .threeStar .midStar {
+    width: 1em;
+  }
+  .mainBanner .threeStar .smallStar {
+    width: 0.5em;
+  }
+  .mainBanner .allMarques {
+    margin: 172% 0 0 0;
+  }
+  .mainBanner .allMarques .comnMarque span {
+    font-size: 0.6rem;
+  }
+  .mainBanner .allMarques .comnMarque span .lilStar {
+    width: 6px;
+    height: 6px;
+  }
+  .mainBanner .allMarques .skillsMarque {
+    margin: 1% 0 0 0;
+  }
+  .mainBanner .allMarques .rollsMarque {
+    margin: 6% 0 0 0;
+  }
+  .mainBanner .allMarques .iskconMarque {
+    margin: 7% 0 0 0;
+  }
+  .mainBanner .allMarques .hobbiesMarque {
+    margin: 8% 0 0 0;
+  }
+  .mainBanner .allMarques .artistMarque {
+    margin: 4% 0 0 0;
+  }
+  /* Decipline Section Starts Here*/
+  .deciplinesSection {
+    font-size: 2.5rem;
+  }
+  /* Main Self Info Two Section Starts Here*/
+  .mainSelfInfoTwo {
+    font-size: 0.8rem;
+  }
+  /* White Star Section Starts Here*/
+  .whiteStarSection img {
+    width: 1.5em;
+  }
+  /* Featured Work Section Starts Here*/
+  .featuredSection {
+    letter-spacing: 0.1em;
+    /*Featured Work 001 Starts Here*/
+    /*Featured Work 002 & 003 Starts Here*/
+  }
+  .featuredSection p {
+    font-size: 1.5rem;
+  }
+  .featuredSection .featuredWorkImage {
+    height: 16em;
+  }
+  .featuredSection .featuredWorkImage .bevmoNum {
+    padding: 12% 0 0 6%;
+    font-size: 0.8rem;
+  }
+  .featuredSection .featuredWorkImage .bevmoText {
+    font-size: 5rem;
+    padding: 6% 0 0 10%;
+  }
+  .featuredSection .bevmoPara {
+    margin: -26% 0 0 22%;
+    font-size: 0.8rem;
+  }
+  .featuredSection .featuredMenu .featuredMenu-item .featuredNumber {
+    font-size: 0.8rem;
+    margin: 0 6% 0 6%;
+  }
+  .featuredSection .featuredMenu .featuredMenu-item span {
+    font-size: 2.8rem;
+  }
+  /* More Work Section Starts Here*/
+  .moreWorkSection {
+    padding: 12% 0 0 0;
+  }
+  .moreWorkSection .moreWorkMarquee .moreWorkInnerMarquee span {
+    font-size: 2rem;
+  }
+  /* White Star Section Starts Here*/
+  .whiteStarSection2 {
+    padding: 26% 0;
+  }
+  .whiteStarSection2 img {
+    width: 1.5em;
+  }
+  /* About Me Section Starts Here*/
+  .aboutMeSection .aboutMeMarquee .aboutMeInnerMarquee span {
+    font-size: 4rem;
+  }
+  /* Main Self Info Two Section Starts Here*/
+  .mainSelfInfoThree {
+    margin: 18% 0 0 0;
+  }
+  .mainSelfInfoThree .innerMainSelfInfoThree {
+    font-size: 0.8rem;
+  }
+  /* Reach Me Out Section Starts Here*/
+  .reachMeOutSection {
+    height: 24em;
+  }
+  .reachMeOutSection .reachMeInnerCircle {
+    width: 169px;
+    height: 169px;
+  }
+  .reachMeOutSection .reachMeManIamge {
+    width: 41.7%;
+  }
+  .reachMeOutSection .social-Links {
+    margin: 86% 0 0 0%;
+  }
+  .reachMeOutSection .allReachMeMarques {
+    margin: 22% 0 0 0;
+  }
+  .reachMeOutSection .allReachMeMarques .comnReachMeMarque span {
+    font-size: 0.8rem;
+  }
+  .reachMeOutSection .allReachMeMarques .hide-Me {
+    display: none;
+  }
+  /* card Section Starts Here*/
+  #whiteVCardDrag {
+    top: 178em;
+  }
+  /* Footer Starts Here*/
+  .footerSection .footerMarquee .footerInnerMarquee span {
+    font-size: 0.8rem;
+  }
+  .footerSection .footerMarquee .footerInnerMarquee span .moreWorkArrow {
+    margin: 0 -3px 3px 0px;
+    width: 6px;
+    height: 6px;
+  }
+}
+
+@media only screen and (max-width: 361px) {
+  /* Main Banner Section Starts Here*/
+  .mainBanner .mainBannerMan {
+    height: 52em;
+  }
+  /* Reach Me Out Section Starts Here*/
+  .reachMeOutSection .reachMeManIamge {
+    width: 43%;
+  }
+  .reachMeOutSection .social-Links {
+    margin: 90% 0 0 0%;
+  }
+  /* card Section Starts Here*/
+  #whiteVCardDrag {
+    top: 175em;
+  }
+}
+/*# sourceMappingURL=index.css.map */

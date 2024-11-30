@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    width: 100%;
+    min-height: fit-content;
+    background: beige;
+    text-align: center;
+    text-transform: uppercase;
+    vertical-align: middle;
+
+    h2{
+        padding: 10% 0;
+    }
+}

@@ -1,0 +1,1363 @@
+@import "default";
+
+body{
+    background: $blackColor;
+}
+
+.mainBanner{
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 0 0 40% 0;
+        display: flex;
+        justify-content: center;
+        z-index: 5;
+        background: $blackColor;
+
+        .mainBaner-ImgBox{
+            position: absolute;
+            margin: 21% 0 0 0;
+            display: flex;
+            justify-content: center;
+            width: 100%;
+            height: auto;
+            //transform: rotate(2deg);
+            //background-color: yellowgreen;
+            z-index: 6;
+
+            /*img{
+                width: 40%;
+                //filter: grayscale(100);
+            }*/
+            .aboutHeroImg{
+                width: 747px;
+                height: 1363px;
+            }
+        }
+
+
+        .inner-MainBanner{
+            width: 85%;
+            height: auto;
+            margin: 10% 0 0 0;
+            font-family: $marionFont;
+            font-size: 12rem;
+            text-transform: uppercase;
+            letter-spacing: 12px;
+            z-index: 7;
+            color: $whiteColor;
+
+            .strike1{
+                position: absolute;
+                width: 14%;
+                height: 8px;
+                margin: 16% 0 0 25%;
+                background-color: $whiteColor;
+                z-index: 8;
+
+            }
+            .strike2{
+                position: absolute;
+                width: 73%;
+                height: 8px;
+                margin: 27% 0 0 8%;
+                background-color: $whiteColor;
+                z-index: 8;
+
+            }
+
+            .iama{
+                margin: 0 0 0 30%;
+            }
+            .overthinker{
+                margin: 0 4% 0 0;
+                text-align: right;
+                color: white;
+            }
+
+            .designer{
+                text-align: right;
+                margin: 0 0 0 0;
+            }
+
+        }
+}
+
+    /* About Me Section Starts Here*/
+    .aboutMeSection{
+        position: relative;
+        width: 100%;
+        height: 3em;
+        z-index: 5;
+        font-family: $gallientFont;
+        text-transform: uppercase;
+        font-size: 8rem;
+        letter-spacing: 1px;
+        color: $whiteColor;
+
+        .basedin{
+            width: 70%;
+            margin: 0 0 0 8%;
+        }
+
+        .aboutMeMarquee{
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+            background-color: $blackColor;
+
+            .aboutMeInnerMarquee{
+                padding: 0;
+                width: 100%;
+                white-space: nowrap;
+                overflow: hidden;
+                
+                span{
+                    position: relative;
+                    padding: 0;
+                    overflow: visible;
+                    white-space: nowrap;
+                    
+                    .aboutMeArrow{
+                        width: 0.6em;
+                    }
+                }
+            }
+        }
+    }
+
+    /* White Star Section Starts Here*/
+    .whiteStarSection2{
+        position: relative;
+        width: 100%;
+        height: auto;
+        margin: 8% 0 0 0;
+        padding: 25% 0;
+        display: flex;
+        justify-content: center;
+        background-color: $blackColor;
+        z-index: 5;
+    
+        img{
+            width: 2.5em;
+        }
+    }
+
+    /* Appointment Letter Section Starts Here*/
+    .appointment-Lettter-Section{
+        position: relative;
+        width: 96%;
+        height: auto;
+        margin: 0 0 0 2%;
+        z-index: 5;
+
+        .inner-apLetter-section{
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+
+            img{
+                width: 36%;
+            }
+
+            .ap-letter-info{
+                .inner-ap-letter-info{
+                    width: 39%;
+                    align-self: center;
+                    font-family: $groteskFont;
+                    font-size: 1.2rem;
+                    line-height: 1.3em;
+                    letter-spacing: 1px;
+
+                    span{
+                        font-family: $groteskMidFont;
+                    }
+                }
+            }
+        }
+    }
+
+    /* Main Self Info Two Section Starts Here*/
+    .mainSelfInfoThree{
+        position: relative;
+        width: 100%;
+        height: auto;
+        padding: 0 0 25% 0;
+        z-index: 5;
+        background-color: $blackColor;
+
+        .innerMainSelfInfoThree{
+            display: flex;
+            justify-content: center;
+            font-family: $groteskFont;
+            font-size: 1.2rem;
+            text-transform: uppercase;
+            color: $whiteColor;
+
+            p{
+                padding: 0;
+                margin: 0;
+            }
+        }
+    }
+
+    /* Reach Me Out Section Starts Here*/
+    .reachMeOutSection{
+        position: relative;
+        width: 100%;
+        height: 74em;
+        background-color: $blackColor;
+        z-index: 5;
+
+        .reachMeInnerCircle{
+            margin: 19% 0 0 0;
+            position: absolute;
+            width: 445px;
+            height: 445px;
+            border: 1px solid $blackColor;
+            border-radius: 50%;
+            z-index: 8;
+            background-color: $whiteColor;
+            left: 50%;
+            transform: translate(-50%);
+        }
+
+        .reachMeManIamge{
+            width: 14%;
+            position: absolute;
+            left: 50%;
+            transform: translate(-50%);
+            z-index: 9;
+        }
+
+        .social-Links{
+            width: 24%;
+            position: absolute;
+            margin: 22% 0 0 39%;
+            display: flex;
+            justify-content: space-between;
+            transform: rotate(270deg);
+            font-family: $groteskFont;
+            font-size: 1.2rem;
+            letter-spacing: 1px;
+            z-index: 9;
+    
+            .ellipse{
+                visibility: hidden;
+            }
+        }
+
+        .allReachMeMarques{
+            position: absolute;
+            margin: 14% 0 0 0;
+            padding: 0;
+            width: 100%;
+            z-index: 3;
+            overflow: hidden;
+
+            .comnReachMeMarque{
+                padding: 0;
+                overflow: hidden;
+                width: 100%;
+
+                span{
+                    position: relative;
+                    padding: 0;
+                    overflow: visible;
+                    color: $whiteColor;
+                    font-family: $gallientFont;
+                    text-transform: uppercase;
+                    font-size: 1.7rem;
+                    letter-spacing: 1.5px;
+                    line-height: 1.5em;
+                    //font-weight: 700;
+                    white-space: nowrap;
+
+                    .reachMeArrow{
+                        width: 0.6em;
+                    }
+                }
+            }
+        }
+
+        
+    }
+
+    /* card Section Starts Here*/
+    #blackVCardDrag{
+        position: absolute;
+        width: 34%;
+        top: 310em;
+        left: 2%;
+        z-index: 17;
+        user-select: none;
+        cursor: move;
+    }
+    #blackVCardDrag:hover ~ .cursor-Hover{
+        display: none;
+    }
+
+    #whiteVCardDrag{
+        position: absolute;
+        width: 34%;
+        right: 0;
+        top: 338em;
+        right: 2%;
+        z-index: 16;
+        cursor: move;
+    }
+    #whiteVCardDrag:hover ~ .cursor-Hover{
+        display: none;
+    }
+    /* Footer Starts Here*/
+    .footerSection{
+        position: relative;
+        width: 100%;
+        padding: 0 0 0 0;
+        margin: 0;
+        z-index: 14;
+
+        .footerMarquee{
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+
+            .footerInnerMarquee{
+                padding: 6px 0 0 0;
+                overflow: hidden;
+                width: 100%;
+                white-space: nowrap;
+                background-color: $whiteColor;
+                
+                span{
+                    position: relative;
+                    padding: 0;
+                    overflow: visible;
+                    font-family: $gallientFont;
+                    text-transform: uppercase;
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    letter-spacing: 1px;
+                    color: $blackColor;
+                    white-space: nowrap;
+        
+                    .moreWorkArrow{
+                        margin: 0 -6px 6px 0px;
+                        width: 10px;
+                        height: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*Media Queries For Responsive Starts Here*/
+@media only screen and (max-width: 2561px){
+
+    .mainBanner{
+        margin: 0 0 26% 0;
+        
+        .mainBaner-ImgBox{
+            margin: 17% 0 0 0;
+            img{
+                width: 29%;
+            }
+        }
+
+        .inner-MainBanner{
+            width: 66%;
+            font-size: 15rem;
+            line-height: 77%;
+
+            .strike1{
+                width: 10%;
+                margin: 11% 0 0 18%;
+            }
+            .strike2{
+                width: 54%;
+                margin: 18% 0 0 4%;
+            }
+            
+            .iama{
+                margin: 0 0 0 27%;
+            }
+            .overthinker{
+                margin: 0 11% 0 0;
+            }
+            .designer{
+            }
+        }
+    }
+
+    /* About Me Section Starts Here*/
+    .aboutMeSection{
+        font-size: 11rem;
+
+        .basedin{
+            width: 50%;
+            margin: 0 0 0 25%;
+        }
+
+        .aboutMeMarquee{
+            margin: -1% 0 0 0;
+        }
+    }
+
+    /* White Star Section Starts Here*/
+    .whiteStarSection2{
+        margin: 0% 0 0 0;
+        padding: 18% 0;
+    
+        img{
+            width: 3em;
+        }
+    }
+
+    .mainSelfInfoThree{
+        .innerMainSelfInfoThree{
+            font-size: 1.5rem;
+        }
+    }
+
+    /* Reach Me Out Section Starts Here*/
+    .reachMeOutSection{
+        height: 80em;
+
+        .reachMeInnerCircle{
+            width: 482px;
+            height: 482px;
+        }
+
+        .reachMeManIamge{
+            width: 11%;
+        }
+
+        .social-Links{
+            width: 16%;
+            margin: 17% 0 0 42%;
+        }
+
+        .allReachMeMarques{
+            .comnReachMeMarque{
+                span{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+
+    #blackVCardDrag{
+        top: 390em;
+    }
+
+    #whiteVCardDrag{
+        top: 408em;
+    }
+
+}
+
+@media only screen and (max-width: 1921px){
+
+    .mainBanner{
+
+        .inner-MainBanner{
+            width: 72%;
+            font-size: 12rem;
+
+            .strike1{
+                width: 14%;
+                margin: 11% 0 0 18%;
+            }
+            .strike2{
+                width: 61%;
+                margin: 19% 0 0 4%;
+            }
+        }
+    }
+
+    /* About Me Section Starts Here*/
+    .aboutMeSection{
+        font-size: 8rem;
+
+        .basedin{
+            margin: 0 0 0 23%;
+        }
+    }
+
+    /* Appointment Letter Section Starts Here*/
+    .appointment-Lettter-Section{
+        .inner-apLetter-section{
+            img{
+            }
+            .ap-letter-info{
+                .inner-ap-letter-info{
+                    width: 50%;
+                }
+            }
+        }
+    }
+
+    /* White Star Section Starts Here*/
+    .whiteStarSection2{
+        padding: 25% 0;
+    }
+
+    .mainSelfInfoThree{
+        .innerMainSelfInfoThree{
+        }
+    }
+
+    /* Reach Me Out Section Starts Here*/
+    .reachMeOutSection{
+        .reachMeInnerCircle{
+            width: 426px;
+            height: 426px;
+        }
+
+        .reachMeManIamge{
+            width: 12%;
+        }
+
+        .social-Links{
+            font-size: 1rem;
+        }
+
+        .allReachMeMarques{
+            .comnReachMeMarque{
+                span{
+                    font-size: 1.7rem;
+                }
+            }
+        }
+    }
+
+    #blackVCardDrag{
+        top: 329em;
+        left: 4%;
+    }
+
+    #whiteVCardDrag{
+        top: 350em;
+        right: 3%;
+    }
+
+}
+
+@media only screen and (max-width: 1729px){
+    .mainBanner{
+        margin: 0 0 30% 0;
+        .mainBaner-ImgBox{
+            margin: 18% 0 0 0;
+            img{
+                width: 33%;
+            }
+        }
+
+        .inner-MainBanner{
+            width: 72%;
+            font-size: 12rem;
+
+            .strike1{
+                margin: 13% 0 0 18%;
+            }
+            .strike2{
+                width: 66%;
+                margin: 21% 0 0 -1%;
+            }
+        }
+    }
+
+    .reachMeOutSection{
+
+        .reachMeInnerCircle{
+            width: 442px;
+            height: 442px;
+        }
+
+        .reachMeManIamge{
+            width: 13%;
+        }
+    }
+
+    #blackVCardDrag{
+        top: 309em;
+        left: 3%;
+    }
+
+    #whiteVCardDrag{
+        top: 330em;
+        right: 2%;
+    }
+}
+
+@media only screen and (max-width: 1537px){
+
+    .mainBanner{
+        margin: 0 0 37% 0;
+
+        .mainBaner-ImgBox{
+            margin: 19% 0 0 0;
+            img{
+                width: 40%;
+            }
+        }
+
+        .inner-MainBanner{
+            width: 80%;
+            font-size: 12rem;
+            line-height: 80%;
+
+            .strike1{
+                margin: 15% 0 0 21%;
+            }
+            .strike2{
+                width: 74%;
+                margin: 25% 0 0 3%;
+            }
+            .overthinker{
+                margin: 0 4% 0 0;
+            }
+        }
+    }
+
+    .aboutMeSection{
+        .basedin{
+            margin: 0 0 0 17%;
+        }
+
+        .aboutMeMarquee{
+            margin: 0;
+        }
+    }
+
+
+    /* Appointment Letter Section Starts Here*/
+    .appointment-Lettter-Section{
+        .inner-apLetter-section{
+            img{
+            }
+            .ap-letter-info{
+                .inner-ap-letter-info{
+                    width: 55%;
+                }
+            }
+        }
+    }
+
+    .whiteStarSection2{
+        img{
+            width: 2.5em;
+        }
+    }
+
+    .reachMeOutSection{
+        height: 65em;
+
+        .reachMeInnerCircle{
+            width: 445px;
+            height: 445px;
+        }
+
+        .reachMeManIamge{
+            width: 14%;
+        }
+
+        .social-Links{
+            width: 21%;
+            margin: 21% 0 0 39.5%;
+        }
+
+        .allReachMeMarques{
+            .comnReachMeMarque{
+                span{
+                    font-size: 1.7rem;
+                }
+            }
+        }
+    }
+
+    #blackVCardDrag{
+        top: 290em;
+        left: 2%;
+    }
+
+    #whiteVCardDrag{
+        top: 310em;
+        right: 0%;
+    }
+
+}
+
+@media only screen and (max-width: 1513px){
+    /* Reach Me Out Section Starts Here*/
+    .reachMeOutSection{
+        .reachMeInnerCircle{
+            width: 438px;
+            height: 438px;
+        }
+    }
+}
+
+@media only screen and (max-width: 1441px){
+    .mainBanner{
+        margin: 0 0 37% 0;
+
+        .mainBaner-ImgBox{
+            margin: 19% 0 0 0;
+            img{
+                width: 40%;
+            }
+        }
+
+        .inner-MainBanner{
+            width: 85%;
+            font-size: 11.8rem;
+
+            .strike1{
+                margin: 16% 0 0 23%;
+            }
+            .strike2{
+                width: 79%;
+                margin: 26% 0 0 3%;
+            }
+        }
+    }
+
+    .aboutMeSection{
+        font-size: 7.8rem;
+        .basedin{
+            margin: 0 0 0 16%;
+        }
+    }
+
+    .reachMeOutSection{
+        .reachMeManIamge{
+            width: 14.5%;
+        }
+
+        .allReachMeMarques{
+            .comnReachMeMarque{
+                span{
+                    font-size: 1.7rem;
+                }
+            }
+        }
+    }
+
+    #blackVCardDrag {
+        top: 275em;
+    }
+
+    #whiteVCardDrag {
+        top: 297em;
+    }
+}
+
+@media only screen and (max-width: 1367px){
+    .mainBanner{
+        .inner-MainBanner{
+            font-size: 11rem;
+        }
+    }
+
+    .aboutMeSection{
+        font-size: 7rem;
+        .basedin{
+            margin: 0 0 0 18%;
+        }
+    }
+
+    .whiteStarSection2{
+    
+        img{
+            width: 2em;
+        }
+    }
+
+    /* Appointment Letter Section Starts Here*/
+    .appointment-Lettter-Section{
+        .inner-apLetter-section{
+            .ap-letter-info{
+                font-size: 1rem;
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 1201px){
+    .mainBanner{
+        
+        .mainBaner-ImgBox{
+            margin: 21% 0 0 0;
+        }
+
+        .inner-MainBanner{
+            font-size: 10rem;
+
+            .strike2{
+                width: 80%;
+                margin: 26% 0 0 1%;
+            }
+        }
+    }
+
+    /* Appointment Letter Section Starts Here*/
+    .appointment-Lettter-Section{
+        .inner-apLetter-section{
+            img{
+                width: 36%;
+            }
+            .ap-letter-info{
+                .inner-ap-letter-info{
+                    width: 70%;
+                }
+            }
+        }
+    }
+
+    /* Reach Me Out Section Starts Here*/
+    .reachMeOutSection{
+        .reachMeInnerCircle{
+            width: 458px;
+            height: 458px;
+        }
+
+        .reachMeManIamge{
+            width: 16.7%;
+        }
+
+        .social-Links{
+            width: 26%;
+            margin: 23% 0 0 37%;
+        }
+    }
+
+    #blackVCardDrag{
+        width: 31%;
+        top: 233em;
+    }
+
+    #whiteVCardDrag{
+        width: 31%;
+        top: 257em;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media only screen and (max-width: 769px){
+    .mainBanner{
+        margin: 0 0 56% 0;
+        .mainBaner-ImgBox{
+            margin: 30% 0 0 0;
+            img{
+                width: 47%;
+            }
+        }
+
+        .inner-MainBanner{
+            font-size: 5rem;
+            margin: 22% 0 0 0;
+
+            .strike1{
+                width: 16%;
+                height: 4px;
+                margin: 13% 0 0 21%;
+            }
+            .strike2{
+                width: 63%;
+                height: 4px;
+                margin: 29% 0 0 22%;
+            }
+            .overthinker {
+                margin: 0 ;
+            }
+        }
+    }
+
+    .aboutMeSection{
+        font-size: 4rem;
+
+        .basedin{
+            margin: 0 0 0 18%;
+        }
+    }
+
+    /* Appointment Letter Section Starts Here*/
+    .appointment-Lettter-Section{
+        .inner-apLetter-section{
+            flex-direction: column;
+            align-items: flex-end;
+
+            img{
+                width: 54%;
+            }
+
+            .ap-letter-info{
+                mix-blend-mode: exclusion;
+                
+                .inner-ap-letter-info{
+                    width: 66%;
+                    margin: -56% 0 0 18%;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+
+    /* Main Self Info Two Section Starts Here*/
+    .mainSelfInfoThree{
+        .innerMainSelfInfoThree{
+            font-size: 1.2rem;
+        }
+    }
+
+    .reachMeOutSection{
+        height: 53em;
+
+        .reachMeInnerCircle{
+            margin: 29% 0 0 0;
+            width: 370px;
+            height: 370px;
+        }
+
+        .reachMeManIamge{
+            width: 22.5%;
+        }
+
+        .social-Links{
+            margin: 92% 0 0 0;
+            width: 50%;
+            font-size: 1.2rem;
+            align-items: center;
+            left: 50%;
+            transform: translateX(-50%) rotate(0deg) !important;
+            
+
+            .ellipse{
+                margin: 0 4%;
+                visibility: visible;
+                height: 0.4em;
+            }
+        }
+
+        .allReachMeMarques{
+            margin: 25% 0 0 0;
+
+            .comnReachMeMarque{
+                span{
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+
+    #blackVCardDrag{
+        display: none;
+    }
+
+    #whiteVCardDrag{
+        width: 63%;
+        right: unset;
+        top: 178em;
+        left: 50%;
+        transform: translate(-50%) !important;
+    }
+
+    /* Footer Starts Here*/
+    .footerSection{
+        .footerMarquee{
+            .footerInnerMarquee{
+                span{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+
+}
+
+@media only screen and (max-width: 429px){
+    .mainBanner{
+        margin: 0 0 48% 0;
+        .mainBaner-ImgBox{
+            img{
+            }
+        }
+
+        .inner-MainBanner{
+            width: 80%;
+            font-size: 3.5rem;
+            letter-spacing: 2px;
+
+            .strike1{
+                width: 14%;
+                height: 2px;
+                margin: 16% 0 0 21%;
+            }
+            .strike2{
+                width: 74%;
+                height: 2px;
+                margin: 26% 0 0 6%;
+            }
+            .overthinker {
+            }
+        }
+    }
+
+    .aboutMeSection{
+        font-size: 2.5rem;
+
+        .basedin{
+            margin: 0 0 0 12%;
+        }
+    }
+
+    /* White Star Section Starts Here*/
+    .whiteStarSection2{
+        img{
+            width: 1.5em;
+        }
+    }
+
+    /* Appointment Letter Section Starts Here*/
+    .appointment-Lettter-Section{
+        .inner-apLetter-section{
+            flex-direction: column;
+            align-items: flex-end;
+
+            img{
+                width: 85%;
+            }
+
+            .ap-letter-info{
+                mix-blend-mode: exclusion;
+                
+                .inner-ap-letter-info{
+                    width: 84%;
+                    margin: -52% 0 0 8%;
+                }
+            }
+        }
+    }
+
+    /* Main Self Info Two Section Starts Here*/
+    .mainSelfInfoThree{
+        .innerMainSelfInfoThree{
+            font-size: 1rem;
+        }
+    }
+
+    .reachMeOutSection{
+        height: 29em;
+
+        .reachMeInnerCircle{
+            width: 220px;
+            height: 220px;
+        }
+
+        .reachMeManIamge{
+            width: 23.5%;
+        }
+
+        .social-Links{
+            margin: 92% 0 0 0;
+            width: 64%;
+            font-size: 1rem;
+            align-items: center;
+            left: 50%;
+            transform: translateX(-50%) rotate(0deg) !important;
+            
+
+            .ellipse{
+                margin: 0 2%;
+                visibility: visible;
+                height: 0.4em;
+            }
+        }
+
+        .allReachMeMarques{
+            margin: 26% 0 0 0;
+            .comnReachMeMarque{
+                span{
+                    font-size: 1rem;
+                }
+            }
+            .hide-Me{
+                display: none;
+            }
+        }
+    }
+
+    #whiteVCardDrag{
+        width: 68%;
+        right: unset;
+        top: 127em;
+        left: 50%;
+        transform: translate(-50%) !important;
+    }
+
+    .footerSection{
+        .footerMarquee{
+            .footerInnerMarquee{
+                span{
+                    font-size: 1rem;
+
+                    .moreWorkArrow {
+                        margin: 0 -3px 3px 0px;
+                        width: 8px;
+                        height: 8px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 413px){
+    .mainBanner{
+        margin: 0 0 48% 0;
+        .mainBaner-ImgBox{
+            img{
+            }
+        }
+
+        .inner-MainBanner{
+
+            .strike1{
+                width: 15%;
+            }
+            .strike2{
+                width: 76%;
+                margin: 27% 0 0 3%;
+            }
+        }
+    }
+
+    .reachMeOutSection{
+
+        .reachMeManIamge{
+            width: 24%;
+        }
+
+        .social-Links{
+            margin: 95% 0 0 0;
+        }
+    }
+
+    .appointment-Lettter-Section{
+        .inner-apLetter-section{
+            img{
+                width: 88%;
+            }
+        }
+    }
+
+    #whiteVCardDrag{
+        top: 128em;
+    }
+}
+
+@media only screen and (max-width: 394px){
+    .mainBanner{
+        margin: 0 0 48% 0;
+        .mainBaner-ImgBox{
+            img{
+            }
+        }
+
+        .inner-MainBanner{
+
+            .strike1{
+                margin: 17% 0 0 21%;
+            }
+            .strike2{
+                width: 80%;
+                margin: 28% 0 0 0;
+            }
+        }
+    }
+
+    .reachMeOutSection{
+
+        .reachMeManIamge{
+            width: 25%;
+        }
+
+        .social-Links{
+            margin: 98% 0 0 0;
+            width: 69%;
+        }
+    }
+
+    .appointment-Lettter-Section{
+        .inner-apLetter-section{
+            img{
+                width: 90%;
+            }
+            .ap-letter-info{
+                .inner-ap-letter-info{
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+
+    #whiteVCardDrag{
+        top: 115em;
+        width: 69%;
+    }
+
+}
+
+@media only screen and (max-width: 391px){
+    .mainBanner{
+        margin: 0 0 44% 0;
+    }
+
+
+
+    #whiteVCardDrag {
+        width: 70%;
+        top: 114em;
+    }
+}
+
+@media only screen and (max-width: 377px){
+    .mainBanner{
+        margin: 0 0 51% 0;
+        .mainBaner-ImgBox{
+            margin: 39% 0 0 0;
+        }
+
+        .inner-MainBanner{
+            margin: 29% 0 0 0;
+            font-size: 3rem;
+
+            .strike1{
+                margin: 15% 0 0 21%;
+            }
+            .strike2{
+                width: 73%;
+                margin: 25% 0 0 7%;
+            }
+            .overthinker {
+                margin: 0 ;
+            }
+        }
+    }
+    .reachMeOutSection{
+        .reachMeInnerCircle{
+            width: 187px;
+            height: 187px;
+        }
+
+        .reachMeManIamge{
+            width: 23%;
+        }
+
+        .social-Links{
+            width: 73%;
+        }
+
+        .allReachMeMarques{
+            .comnReachMeMarque{
+                span{
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+
+    #whiteVCardDrag {
+        width: 62%;
+    }
+
+    /* Footer Starts Here*/
+    .footerSection{
+        .footerMarquee{
+            .footerInnerMarquee{
+                span{
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 361px){
+    .reachMeOutSection{
+        height: 27em;
+        .reachMeInnerCircle{
+            width: 187px;
+            height: 187px;
+        }
+
+        .reachMeManIamge{
+            width: 23.6%;
+        }
+
+        .social-Links{
+            width: 73%;
+        }
+
+        .allReachMeMarques{
+            .comnReachMeMarque{
+                span{
+                    font-size: 0.8rem;
+                }
+            }
+        }
+    }
+
+    .aboutMeSection{
+        font-size: 2rem;
+    }
+
+    #whiteVCardDrag {
+        width: 66%;
+        top: 110em;
+    }
+}

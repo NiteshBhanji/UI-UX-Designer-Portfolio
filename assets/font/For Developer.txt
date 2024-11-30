@@ -1,0 +1,45 @@
+1
+
+http://sirxemic.github.io/jquery.ripples/  
+
+project ke upar yeh effect chahiye
+
+2
+
+https://stackoverflow.com/questions/25934817/how-to-let-a-div-stick-to-cursor
+
+text ke upar hover karoge tab wala effect
+
+3
+
+https://www.youtube.com/watch?v=E1i5A86yxeE
+
+yeh wo wala image wala animation jab aap project pe hover karte ho tab ka 
+
+4
+
+https://www.youtube.com/watch?v=B5qepgwIZxA&list=RDCMUC7pVho4O31FyfQsZdXWejEw&index=18
+
+text ke upar hover wala animation footer wale vector pe aur sticky text pe
+
+5
+
+https://www.youtube.com/watch?v=WZQnqBj_Oi4&list=RDCMUC7pVho4O31FyfQsZdXWejEw&index=33
+
+yeh jab project pe hover karoge tab wo cursor change hoke jo maine bataya tha wesa
+wesa
+
+6
+
+https://www.youtube.com/watch?v=pk14lE-IcIM
+
+yeh project text ka rotation
+
+7
+
+https://www.youtube.com/watch?v=uKZatlELgLs&list=RDCMUC7pVho4O31FyfQsZdXWejEw&index=42
+
+yeh hamburger menu ka 
+
+
+

@@ -1,0 +1,722 @@
+@import "default";
+
+html,body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background: $blackColor;
+    overflow: hidden;
+}
+
+
+
+main{
+
+    .projectPanViewport{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: $blackColor;
+        overflow: hidden;
+        cursor: grab;
+
+            .projectPan {
+                position: absolute;
+                width: 200%;
+                height: 200vh;
+                top: -34%;
+                left: -16%;
+                transition: 05 linear;
+            
+                .row {
+                    display: flex;
+                    justify-content: space-around;
+                    margin: 4em 0;
+                }
+            
+                .block {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    overflow: hidden;
+                    width: 367px;
+                    height: 647px;
+                    background: $blackColor;
+                    filter: grayscale(1);
+                    opacity: 0.4;
+                    transition: 1s;
+                    border: 1px solid inset $blackColor;
+                    cursor: grab;
+                    
+        
+                    video{
+                        min-height: 100%;
+                    }
+                }
+            
+                .block:hover {
+                    filter: grayscale(0);
+                    opacity: 1;
+                }
+
+                .block:hover ~ .cursor-Hover{
+                    display: none;
+                }
+            }
+        
+    }
+    .projectPanViewport:hover ~ .cursor-Hover{
+        visibility: hidden;
+    }
+
+    .projectCircle{
+        position: fixed;
+        width: 36%;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-43%);
+        z-index: 13;
+        cursor: none;
+    }
+
+    .footerSection{
+        position: fixed;
+        width: 100%;
+        padding: 0 0 0 0;
+        margin: 0;
+        bottom: 9%;
+        z-index: 14;
+    
+        .footerMarquee{
+            position: absolute;
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            overflow: hidden;
+            white-space: nowrap;
+    
+            .footerInnerMarquee{
+                padding: 6px 0 0 0;
+                overflow: hidden;
+                width: 100%;
+                white-space: nowrap;
+                background-color: $whiteColor;
+                
+                span{
+                    position: relative;
+                    padding: 0;
+                    overflow: visible;
+                    font-family: $gallientFont;
+                    text-transform: uppercase;
+                    font-size: 1.5rem;
+                    font-weight: 700;
+                    letter-spacing: 1px;
+                    color: $blackColor;
+                    white-space: nowrap;
+        
+                    .moreWorkArrow{
+                        margin: 0 -6px 6px 0px;
+                        width: 10px;
+                        height: 10px;
+                    }
+                }
+            }
+        }
+    }
+
+    .centerText {
+        position: absolute;
+        bottom: 46%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        font-family: $groteskMidFont;
+        font-weight: normal;
+        font-size: 1.1rem;
+        text-transform: uppercase;
+        color: white;
+        z-index: 15;
+        mix-blend-mode: exclusion;
+        cursor: grab;
+    }
+
+    .projectMan{
+        position: fixed;
+        width: 37%;
+        bottom: 0;
+        left: 50%;
+        transform: translate(-59%);
+        z-index: 15;
+        cursor: pointer;
+        pointer-events: none;
+    }
+
+    .link_Behance{
+        width: 100%;
+        position: fixed;
+        bottom: 14%;
+        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-family: $groteskFont;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        z-index: 16;
+        cursor: pointer;
+
+        .magnetLinksall{
+            transform: rotate(270deg);
+            margin: 0 0 0 1%;
+        }
+
+        .magnetLinksall:hover ~ .cursor-Hover{
+            visibility: visible;
+        }
+    }
+
+    .centerText:hover ~ .cursor-Hover{
+        visibility: hidden;
+    }
+    .projectCircle:hover ~ .cursor-Hover{
+        visibility: visible;
+    }
+    .projectMan:hover ~ .cursor-Hover{
+        visibility: visible;
+    }
+    
+}
+
+
+@media only screen and (max-width: 2561px){
+
+    main{
+        .projectPanViewport{
+            .projectPan {
+                width: 110%;
+                height: 200vh;
+                top: -22%;
+                left: -5%;
+
+                .row {
+                    margin: 6em 0;
+                }
+                
+                .block {
+                    video{
+                        min-height: 100%;
+                        cursor: url("../assets/png/clickHere_cursor.png") auto !important;
+                    }
+                }
+                .block:hover {
+                }
+            }
+        }
+
+        .projectCircle{
+            width: 25%;
+        }
+
+        .centerText{
+            bottom: 50%;
+        }
+
+        .projectMan{
+            width: 26%;
+            
+        }
+
+        .link_Behance{
+            bottom: 28%;
+
+            .magnetLinksall{
+                margin: 0 0 0 0.5%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1921px){
+    main{
+        .projectPanViewport{
+            .projectPan {
+                width: 140%;
+
+                .row {
+                    margin: 5em 0;
+                }
+                
+                .block {
+                    video{
+                    }
+                }
+                .block:hover {
+                }
+            }
+        }
+
+        .projectCircle{
+        }
+
+        .centerText{
+            bottom: 40%;
+        }
+
+        .projectMan{
+        }
+
+        .link_Behance{
+            bottom: 23%;
+            font-size: 1rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 1537px){
+    main{
+        .projectPanViewport{
+            .projectPan {
+                width: 175%;
+                .row {
+                }
+                
+                .block {
+                    video{
+                    }
+                }
+                .block:hover {
+                }
+            }
+        }
+
+        .projectCircle{
+            width: 36%;
+        }
+
+        .centerText{
+            bottom: 47%;
+        }
+
+        .projectMan{
+            width: 37%;
+        }
+
+        .link_Behance{
+            bottom: 26%;
+
+            .magnetLinksall{
+                margin: 0 0 0 1%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1513px){
+
+}
+
+@media only screen and (max-width: 1441px){
+    main{
+        .projectPanViewport{
+            .projectPan {
+                .row {
+                    margin: 3.5em 0;
+                }
+                
+                .block {
+                    video{
+                    }
+                }
+                .block:hover {
+                }
+            }
+        }
+
+        .projectCircle{
+        }
+
+        .centerText{
+            bottom: 45%;
+        }
+
+        .projectMan{
+        }
+
+        .link_Behance{
+            bottom: 24%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1367px){
+    main{
+        .projectPanViewport{
+            .projectPan {
+                width: 183%;
+                .row {
+                }
+                
+                .block {
+                    video{
+                    }
+                }
+                .block:hover {
+                }
+            }
+        }
+
+        .projectCircle{
+        }
+
+        .centerText{
+            bottom: 43%;
+        }
+
+        .projectMan{
+        }
+
+        .link_Behance{
+            bottom: 23%;
+        }
+    }
+}
+
+@media only screen and (max-width: 1201px){
+    main{
+        .projectPanViewport{
+            .projectPan {
+                width: 210%;
+                .row {
+                }
+                
+                .block {
+                    video{
+                    }
+                }
+                .block:hover {
+                }
+            }
+        }
+
+        .projectCircle{
+            width: 41%;
+        }
+
+        .centerText{
+        }
+
+        .projectMan{
+            width: 40%;
+        }
+
+        .link_Behance{
+            bottom: 22%;
+        }
+    }
+}
+
+
+
+
+
+
+
+@media only screen and (max-width: 769px){
+    main{
+        .projectPanViewport{
+            .projectPan {
+                width: 246%;
+
+                .row {
+                }
+                
+                .block {
+                    width: 255px;
+                    height: 445px;
+                    filter: grayscale(0);
+
+                    video{
+                    }
+                }
+                .block:hover {
+                }
+            }
+        }
+
+        .projectCircle{
+            width: 69%;
+        }
+
+        .centerText{
+            bottom: 46%;
+        }
+
+        .projectMan{
+            width: 68%;
+            pointer-events: unset;
+        }
+
+        .link_Behance{
+            bottom: 24%;
+
+            .magnetLinksall{
+                margin: 0 0 0 2%;
+            }
+        }
+        .cursor-Hover{
+            display: none;
+        }
+    }
+}
+
+@media only screen and (max-width: 429px){
+    main{
+        .projectPanViewport{
+            .projectPan {
+                width: 319%;
+
+                .row {
+                    margin: 2em 0;
+                }
+                
+                .block {
+                    width: 195px;
+                    height: 335px;
+
+                    video{
+                    }
+                }
+                .block:hover {
+                }
+            }
+        }
+
+        .projectCircle{
+            width: 81%;
+        }
+
+        .centerText{
+            width: 100%;
+            font-size: 0.8rem;
+            text-align: center;
+            bottom: 50%;
+        }
+
+        .projectMan{
+            width: 85%;
+        }
+
+        .link_Behance{
+            font-size: 0.8rem;
+            bottom: 16.5%;
+            
+            .magnetLinksall{
+                margin: 0 0 0 2.5%;
+            }
+        }
+
+        .footerSection{
+        
+            .footerMarquee{
+                .footerInnerMarquee{
+                    span{
+                        font-size: 1.2rem;
+            
+                        .moreWorkArrow{
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 413px){
+    main{
+        .projectPanViewport{
+            .projectPan {
+                width: 334%;
+
+                .row {
+                }
+                
+                .block {
+
+                    video{
+                    }
+                }
+                .block:hover {
+                }
+            }
+        }
+
+        .projectCircle{
+        }
+
+        .centerText{
+        }
+
+        .projectMan{
+        }
+
+        .link_Behance{
+            bottom: 16.5%;
+            
+            .magnetLinksall{
+                margin: 0 0 0 5%;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 394px){
+    main{
+        .projectPanViewport{
+            .projectPan {
+                width: 343%;
+
+                .row {
+                }
+                
+                .block {
+
+                    video{
+                    }
+                }
+                .block:hover {
+                }
+            }
+        }
+
+        .projectCircle{
+        }
+
+        .centerText{
+        }
+
+        .projectMan{
+        }
+
+        .link_Behance{
+            bottom: 16%;
+            font-size: 0.6rem;
+            
+            .magnetLinksall{
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 391px){
+    main{
+        .projectPanViewport{
+            .projectPan {
+
+                .row {
+                }
+                
+                .block {
+
+                    video{
+                    }
+                }
+                .block:hover {
+                }
+            }
+        }
+
+        .projectCircle{
+        }
+
+        .centerText{
+        }
+
+        .projectMan{
+        }
+
+        .link_Behance{
+            bottom: 16%;
+            
+            .magnetLinksall{
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 377px){
+    main{
+        .projectPanViewport{
+            .projectPan {
+
+                .row {
+                    margin: 1.5em 0;
+                }
+                
+                .block {
+
+                    video{
+                    }
+                }
+                .block:hover {
+                }
+            }
+        }
+
+        .projectCircle{
+        }
+
+        .centerText{
+        }
+
+        .projectMan{
+        }
+
+        .link_Behance{
+            bottom: 17%;
+            
+            .magnetLinksall{
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 361px){
+    main{
+        .projectPanViewport{
+            .projectPan {
+                width: 370%;
+
+                .row {
+                }
+                
+                .block {
+
+                    video{
+                    }
+                }
+                .block:hover {
+                }
+            }
+        }
+
+        .projectCircle{
+        }
+
+        .centerText{
+        }
+
+        .projectMan{
+        }
+
+        .link_Behance{
+            bottom: 17%;
+            
+            .magnetLinksall{
+            }
+        }
+    }
+}
+
+
+

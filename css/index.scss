@@ -1,0 +1,1885 @@
+@import "default";
+
+/* Main Banner Section Starts Here*/
+.mainBanner{
+    position: relative;
+    width: 100vw;
+    height: 143em;
+    text-align: center;
+    z-index: 5;
+    background-color: $blackColor;
+    mix-blend-mode: exclusion;
+
+    .balckBGCircle{
+            position: absolute;
+            width: 100%;
+            height: 143em;
+            margin: 2% 0 0 0;
+            background-image: url("../assets/png/andafine2.png");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center top;
+            z-index: 7;
+    }
+
+    /*.balckBGCircle{
+        position: absolute;
+        width: 100vw;
+        top: 0;
+        left: 0;
+        mix-blend-mode: exclusion;
+        z-index: 7;
+    }*/
+
+    .allMarques{
+        position: absolute;
+        margin: 96% 0 0 0;
+        padding: 0;
+        width: 100%;
+        z-index: 8;
+        overflow: hidden;
+
+        .comnMarque{
+            padding: 0;
+            overflow: hidden;
+            width: 100%;
+
+            span{
+                position: relative;
+                padding: 0;
+                overflow: visible;
+                color: $whiteColor;
+                font-family: $gallientFont;
+                text-transform: uppercase;
+                font-size: 1.5rem;
+                letter-spacing: 1.5px;
+                //font-weight: 700;
+                white-space: nowrap;
+
+                .lilStar{
+                    margin: 0 0 4px 0;
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+        }
+
+        .skillsMarque{
+            margin: 2% 0 0 0;
+            transform: rotate(2deg);
+        }
+        .rollsMarque{
+            margin: 7% 0 0 0;
+            transform: rotate(-2deg);
+        }
+        .iskconMarque{
+            margin: 8% 0 0 0;
+            transform: rotate(2deg);
+        }
+        .hobbiesMarque{
+            margin: 9% 0 0 0;
+            transform: rotate(-2deg);
+        }
+        .artistMarque{
+            margin: 5% 0 0 0;
+        }
+    }
+
+    .mainBannerMan{
+        position: absolute;
+        top: 4%;
+        //left: 0;
+        width: 100%;
+        height: 140em;
+        background-image: url("../assets/png/meBanner.png");
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: 55%;
+        z-index: 9;
+
+    }
+
+    /*.mainBannerMan{
+        position: absolute;
+        width: 55%;
+        top: 4%;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 9;
+    }*/
+
+    .mainBannerText{
+        position: absolute;
+        width: 100%;
+        height: fit-content;
+        z-index: 10;
+        font-family: $marionFont;
+        text-transform: uppercase;
+        letter-spacing: 0.035em;
+        text-align: center;
+        color: $whiteColor;
+        overflow: hidden;
+
+        .youAre{
+            margin: 3vh 0 0 0;
+            font-size: 6.5rem;
+        }
+        .viewing{
+            font-size: 13rem;
+            line-height: 10vh;
+        }
+        .abhishekK{
+            font-size: 20rem;
+            line-height: 14vh;
+        }
+        .portfolio{
+            font-size: 13rem;
+            line-height: 10vh;
+        }
+    }
+
+    .MainSelfInfoOne{
+        position: absolute;
+        margin: 69% 0 0 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        justify-content: center;
+        text-align: left;
+        color: $whiteColor;
+        font-family: $groteskFont;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        z-index: 10;
+    }
+
+    .threeStar{
+        position: absolute;
+        margin: 69% 0 0 0;
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 10;
+        
+
+        .largeStar{
+            width: 2.5em;
+        }
+        .midStar{
+            width: 2em;
+        }
+        .smallStar{
+            width: 1.5em;
+        }
+
+        img{
+            margin: 0 0 1% 0;
+        }
+    }
+
+}
+
+/* Decipline Section Starts Here*/
+.deciplinesSection{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 6% 0 0 0;
+    font-family: $marionFont;
+    font-size: 11rem;
+    letter-spacing: 0.035em;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: $blackColor;
+    color: $whiteColor;
+    z-index: 5;
+
+}
+
+/* Main Self Info Two Section Starts Here*/
+.mainSelfInfoTwo{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: inline-flex;
+    justify-content: center;
+    padding: 25% 0 0 0;
+    font-family: $groteskFont;
+    font-size: 1.2rem;
+    //text-align: center;
+    text-transform: uppercase;
+    background: $blackColor;
+    z-index: 5;
+}
+
+/* White Star Section Starts Here*/
+.whiteStarSection{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 25% 0;
+    display: flex;
+    justify-content: center;
+    background-color: $blackColor;
+    z-index: 5;
+
+    img{
+        width: 2.5em;
+    }
+}
+
+/* Featured Work Section Starts Here*/
+.featuredSection{
+    position: relative;
+    width: 100%;
+    height: auto;
+    letter-spacing: 0.3em;
+    background-color: $blackColor;
+    overflow: hidden;
+    z-index: 5;
+
+    p{
+        margin: 0;
+        font-family: $marionFont;
+        font-size: 10rem;
+        padding: 0 0 4% 9%;
+    }
+
+    /*Featured Work 001 Starts Here*/
+    .featuredWorkImage{
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 66em;
+        background-image: url("../assets/png/evmo.png");
+        background-size: 100%;
+        background-repeat: no-repeat;
+        display: flex;
+        cursor: pointer;
+
+
+        .bevmoNum{
+            font-family: $groteskFont;
+            font-size: 1.5rem;
+            letter-spacing: 0;
+            padding: 12% 0 0 10%;
+        }
+        .bevmoText{
+            font-family: $marionFont;
+            font-size: 26rem;
+            line-height: 72%;
+            padding: 5% 0 0 5%;
+        }
+    }
+
+    .bevmoPara{
+        position: absolute;
+        margin: -18% 0 0 18%;
+        font-family: $groteskFont;
+        font-size: 1.2rem;
+        letter-spacing: 0px;
+        z-index: 8;
+    }
+
+    /*Featured Work 002 & 003 Starts Here*/
+    .featuredMenu{
+        position: relative;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        font-family: $marionFont;
+        
+        .featuredMenu-item{
+            position: relative;
+            padding: 20% 0;
+            display: flex;
+            align-items: center;
+            flex: 1;
+
+            .featuredNumber{
+                font-family: $groteskFont;
+                font-size: 1.5rem;
+                letter-spacing: 0;
+                margin: 0 7% 0 7%;
+            }
+
+            .featuredParentRotateDiv{
+                position: relative;
+                margin: 1rem;
+            }
+
+            .featuredParentRotateDiv::before {
+                position: absolute;
+                left: -15px;
+                top: 0;
+                width: auto;
+            }
+
+            
+            .featuredMenu__item-text {
+                pointer-events: none;
+                display: block;
+                line-height: 1;
+                position: relative;
+            }
+
+            .featuredParentRotateDiv > div {
+                perspective: 1000px;
+                transform-style: preserve-3d;
+                overflow: hidden;
+                
+            }
+
+            .featuredParentRotateDiv > div:nth-child(1) span {
+                will-change: transform;
+                transform-style: preserve-3d;
+                transition: 0.5s;
+                transition-delay: calc(0.05s * var(--index));
+                transform-origin: bottom;
+                display: inline-block;
+            }
+                
+            .featuredParentRotateDiv > div:nth-child(2) span {
+                will-change: transform;
+                transform-style: preserve-3d;
+                transition: 0.5s;
+                transition-delay: calc(0.05s * var(--index));
+                transform-origin: top;
+                display: inline-block;
+                transform: translate3d(0, 100%, 0) rotateX(90deg);
+            }
+
+            .featuredParentRotateDiv:hover > div:nth-child(1) span {
+                transform: translate3d(0, -100%, 0) rotateX(-90deg);
+            }
+                
+            .featuredParentRotateDiv:hover > div:nth-child(2) span {
+                transform: translate3d(0, 0%, 0) rotateX(0deg);
+            }
+                
+            span {
+                font-size: 13rem;
+            }
+            
+
+            .featuredHover-reveal{
+                position: absolute;
+                top: 8%;
+                left: 0;
+                width: 367px;
+                height: 700px;
+                opacity: 0;
+                pointer-events: none;
+                transform: translate(0, -300px);
+                transition:  0.2s ease-out;
+
+                .featuredHover-reveal__inner {
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    will-change: transform;
+                    overflow: hidden;
+                }
+
+                .featuredHover-reveal__img {
+                    background-size: cover;
+                    background-position: 50%, 50%;
+                    transform-origin: 50% 100%;
+                    width: 100%;
+                    height: 100%;
+                    position: relative;
+                    will-change: transform;
+                    transform: scale(0.8, 0.8);
+                    transition: 1.5s transform;
+                }
+
+                .first {
+                    background-image: url("../assets/png/casade.png");
+                }
+                
+                .second {
+                    background-image: url("../assets/png/monoglass.png");
+                }
+            }
+        }    
+    }
+}
+
+/* More Work Section Starts Here*/
+.moreWorkSection{
+    position: relative;
+    width: 100%;
+    height: auto;
+    padding: 22.5% 0 0 0;
+    z-index: 5;
+    background-color: $blackColor;
+
+    .moreWorkMarquee{
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: auto;
+        overflow: hidden;
+        white-space: nowrap;
+        background-color: $blackColor;
+        z-index: 5;
+
+        .moreWorkInnerMarquee{
+            padding: 0;
+            overflow: hidden;
+            width: 100%;
+            white-space: nowrap;
+            
+            span{
+                position: relative;
+                padding: 0;
+                overflow: visible;
+                font-family: $gallientFont;
+                text-transform: uppercase;
+                font-size: 5.5rem;
+                letter-spacing: 1px;
+                white-space: nowrap;
+                color: $whiteColor;
+    
+                .moreWorkArrow{
+                    width: 0.6em;
+                }
+            }
+        }
+    }
+}
+
+/* White Star Section Starts Here*/
+.whiteStarSection2{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 8% 0 0 0;
+    padding: 25% 0;
+    display: flex;
+    justify-content: center;
+    background-color: $blackColor;
+    z-index: 5;
+
+    img{
+        width: 2.5em;
+    }
+}
+
+/* About Me Section Starts Here*/
+.aboutMeSection{
+    position: relative;
+    width: 100%;
+    height: auto;
+    z-index: 14;
+    margin: 0 0 12% 0;
+
+    .aboutMeMarquee{
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+        background-color: $blackColor;
+
+        .aboutMeInnerMarquee{
+            padding: 0;
+            overflow: hidden;
+            width: 100%;
+            white-space: nowrap;
+            
+            span{
+                position: relative;
+                padding: 0;
+                overflow: visible;
+                font-family: $gallientFont;
+                text-transform: uppercase;
+                font-size: 10rem;
+                letter-spacing: 1px;
+                color: $blackColor;
+                white-space: nowrap;
+                color: $whiteColor;
+    
+                .aboutMeArrow{
+                    width: 0.6em;
+                }
+            }
+        }
+    }
+}
+
+/* Main Self Info Two Section Starts Here*/
+.mainSelfInfoThree{
+    position: relative;
+    width: 100%;
+    height: auto;
+    margin: 14% 0 0 0;
+    padding: 25% 0;
+    z-index: 5;
+    background-color: $blackColor;
+
+    .innerMainSelfInfoThree{
+        display: flex;
+        justify-content: center;
+        font-family: $groteskFont;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        color: $whiteColor;
+
+        p{
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+}
+
+/* Reach Me Out Section Starts Here*/
+.reachMeOutSection{
+    position: relative;
+    width: 100%;
+    height: auto;
+    height: 74em;
+    background-color: $blackColor;
+    z-index: 5;
+
+    .reachMeInnerCircle{
+        margin: 21.5% 0 0 0;
+        position: absolute;
+        width: 445px;
+        height: 445px;
+        border: 1px solid $blackColor;
+        border-radius: 50%;
+        z-index: 8;
+        background-color: $whiteColor;
+        left: 50%;
+        transform: translate(-50%);
+    }
+
+    .reachMeManIamge{
+        width: 28.5%;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 9;
+    }
+
+    .social-Links{
+        width: 24%;
+        position: absolute;
+        margin: 22% 0 0 39%;
+        display: flex;
+        justify-content: space-between;
+        transform: rotate(270deg);
+        font-family: $groteskFont;
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+        z-index: 9;
+
+        .ellipse{
+            visibility: hidden;
+        }
+    }
+
+    .allReachMeMarques{
+        position: absolute;
+        margin: 16.5% 0 0 0;
+        padding: 0;
+        width: 100%;
+        z-index: 3;
+        overflow: hidden;
+
+        .comnReachMeMarque{
+            padding: 0;
+            overflow: hidden;
+            width: 100%;
+
+            span{
+                position: relative;
+                padding: 0;
+                overflow: visible;
+                color: $whiteColor;
+                font-family: $gallientFont;
+                text-transform: uppercase;
+                font-size: 1.7rem;
+                letter-spacing: 1.5px;
+                line-height: 1.5em;
+                //font-weight: 700;
+                white-space: nowrap;
+
+                .reachMeArrow{
+                    width: 0.6em;
+                }
+            }
+        }
+    }
+}
+
+/* card Section Starts Here*/
+#blackVCardDrag{
+    position: absolute;
+    width: 34%;
+    top: 638em;
+    left: 2%;
+    z-index: 16;
+    cursor: move;
+
+}
+#blackVCardDrag:hover ~ .cursor-Hover{
+    display: none;
+}
+
+#whiteVCardDrag{
+    position: absolute;
+    width: 34%;
+    right: 0;
+    top: 658em;
+    z-index: 16;
+    cursor: move;
+}
+#whiteVCardDrag:hover ~ .cursor-Hover{
+    display: none;
+}
+
+/* Footer Starts Here*/
+.footerSection{
+    position: relative;
+    width: 100%;
+    padding: 0 0 0 0;
+    margin: 0;
+    bottom: 0;
+    z-index: 5;
+
+    .footerMarquee{
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow: hidden;
+        white-space: nowrap;
+
+        .footerInnerMarquee{
+            padding: 6px 0 0 0;
+            overflow: hidden;
+            width: 100%;
+            white-space: nowrap;
+            background-color: $whiteColor;
+            
+            span{
+                position: relative;
+                padding: 0;
+                overflow: visible;
+                font-family: $gallientFont;
+                text-transform: uppercase;
+                font-size: 1.5rem;
+                font-weight: 700;
+                letter-spacing: 1px;
+                color: $blackColor;
+                white-space: nowrap;
+    
+                .moreWorkArrow{
+                    margin: 0 -6px 6px 0px;
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+
+/*Media Queries For Responsive Starts Here*/
+@media only screen and (max-width: 2561px){
+    .mainBanner{
+        .balckBGCircle{
+            height: 226em;
+        }
+        .mainBannerMan{
+            height: 222em;
+            top: 6%;
+        }
+        .mainBannerText{
+    
+            .youAre{
+                margin: 12% 0 0 0;
+                font-size: 7rem;
+            }
+            .viewing{
+                font-size: 14rem;
+                line-height: 74%;
+            }
+            .abhishekK{
+                font-size: 20rem;
+                line-height: 71%;
+            }
+            .portfolio{
+                font-size: 13rem;
+                line-height: 70%;
+            }
+        }
+    }
+
+    .deciplinesSection{
+        margin: 56% 0 0 0;
+    }
+
+    .featuredSection{
+
+        .bevmoPara{
+            margin: -11% 0 0 17%;
+        }
+
+        .featuredMenu{
+            .featuredMenu-item{
+                padding: 15% 0;
+                .featuredHover-reveal{
+                    top: 20%;
+                }
+            }
+        }
+    }
+
+    .reachMeOutSection{
+
+        .reachMeInnerCircle{
+            margin: 19.5% 0 0 0;
+        }
+
+        .reachMeManIamge{
+            width: 21%;
+        }
+
+        .social-Links{
+            width: 16%;
+            margin: 18% 0 0 43%;
+        }
+
+    }
+
+    #blackVCardDrag{
+        width: 28%;
+        top: 906em;
+        left: 8%;
+    }
+    
+    #whiteVCardDrag{
+        width: 28%;
+        right: 7%;
+        top: 921em;
+    }
+    
+}
+
+@media only screen and (max-width: 1921px){
+    .mainBanner{
+        .mainBannerMan{
+            top: 4%;
+        }
+    }
+
+    .deciplinesSection{
+        margin: 28% 0 0 0;
+    }
+
+    .featuredSection{
+        .bevmoPara{
+            margin: -15% 0 0 17%;
+        }
+        .featuredMenu{
+            .featuredMenu-item{
+                padding: 20% 0;
+                .featuredHover-reveal{
+                    top: 20%;
+                }
+
+            }
+
+        }
+    }
+
+    .reachMeOutSection{
+
+        .reachMeInnerCircle{
+            margin: 19.5% 0 0 0;
+        }
+
+        .reachMeManIamge{
+            width: 24%;
+        }
+
+        .social-Links{
+            width: 19%;
+            margin: 19% 0 0 41%;
+        }
+        .allReachMeMarques {
+            margin: 15.5% 0 0 0;
+        }
+
+    }
+
+    #blackVCardDrag{
+        width: 30%;
+        top: 754em;
+        left: 5%;
+    }
+    
+    #whiteVCardDrag{
+        width: 30%;
+        right: 5%;
+        top: 769em;
+    }
+}
+
+@media only screen and (max-width: 1729px){
+    .reachMeOutSection{
+        .reachMeManIamge{
+            width: 25.5%;
+        }
+    }
+
+    #blackVCardDrag{
+        top: 710em;
+    }
+    
+    #whiteVCardDrag{
+        top: 728em;
+    }
+}
+
+@media only screen and (max-width: 1537px){
+
+    .mainBanner{
+        .mainBannerText{
+    
+            .youAre{
+                margin: 8% 0 0 0;
+                font-size: 7rem;
+            }
+        }
+    }
+
+    .deciplinesSection{
+        margin: 0;
+    }
+
+
+
+    .featuredSection{
+        .bevmoPara{
+            margin: -18% 0 0 17%;
+        }
+    
+        /*Featured Work 002 & 003 Starts Here*/
+        .featuredMenu{
+            .featuredMenu-item{
+                .featuredHover-reveal{
+                    .featuredHover-reveal__img {
+                        width: 85%;
+                        height: 85%;
+                    }
+                }
+            }    
+        }
+    }
+
+    .reachMeOutSection{
+
+        .reachMeInnerCircle{
+            margin: 20.5% 0 0 0;
+        }
+
+        .reachMeManIamge{
+            width: 28%;
+        }
+
+        .social-Links{
+            width: 24%;
+            margin: 22% 0 0 39%;
+        }
+
+    }
+
+    #blackVCardDrag{
+        width: 34%;
+        top: 638em;
+        left: 2%;
+    }
+    
+    #whiteVCardDrag{
+        width: 34%;
+        right: 0%;
+        top: 658em;
+    }
+}
+
+@media only screen and (max-width: 1513px){
+
+}
+
+@media only screen and (max-width: 1441px){
+    .mainBanner{
+        .mainBannerText{
+    
+            .youAre{
+                font-size: 6rem;
+            }
+            .viewing{
+                font-size: 12rem;
+            }
+            .abhishekK{
+                font-size: 20rem;
+            }
+            .portfolio{
+                font-size: 13rem;
+            }
+        }
+    }
+
+    .deciplinesSection{
+        font-size: 10rem;
+    }
+
+    .featuredSection{
+        .bevmoPara{
+            margin: -19% 0 0 17%;
+        }
+    }
+
+    .reachMeOutSection{
+
+        .reachMeManIamge{
+            width: 29%;
+        }
+    }
+
+    #blackVCardDrag{
+        width: 32%;
+        top: 614em;
+        left: 3%;
+    }
+    
+    #whiteVCardDrag{
+        width: 32%;
+        right: 0%;
+        top: 635em;
+    }
+    
+}
+
+@media only screen and (max-width: 1367px){
+    .mainBanner{
+        height: 130em;
+
+        .mainBannerText{
+    
+            .youAre{
+                margin: 9% 0 0 0;
+                font-size: 5rem;
+            }
+            .viewing{
+                font-size: 11rem;
+            }
+            .abhishekK{
+                font-size: 18rem;
+            }
+            .portfolio{
+                font-size: 12rem;
+            }
+        }
+    }
+
+    .reachMeOutSection{
+
+        .reachMeInnerCircle{
+            margin: 21% 0 0 0;
+        }
+
+        .reachMeManIamge{
+            width: 30.5%;
+        }
+
+        .social-Links{
+            font-size: 1rem;
+        }
+    }
+
+    #blackVCardDrag{
+        top: 588em;
+    }
+    
+    #whiteVCardDrag{
+        top: 608em;
+    }
+}
+
+@media only screen and (max-width: 1201px){
+    .mainBanner{
+        height: 113em;
+
+        .mainBannerText{
+    
+            .youAre{
+                font-size: 5rem;
+            }
+            .viewing{
+                font-size: 10rem;
+            }
+            .abhishekK{
+                font-size: 16rem;
+            }
+            .portfolio{
+                font-size: 10rem;
+
+            }
+        }
+    }
+
+    .deciplinesSection{
+        font-size: 9rem;
+    }
+
+    .featuredSection{
+        p{
+            font-size: 7rem;
+        }
+
+        .featuredWorkImage{
+            height: 68em;
+
+            .bevmoNum{
+                font-size: 1.2rem;
+                padding: 13% 0 0 8%;
+            }
+            .bevmoText{
+                font-size: 22rem;
+                line-height: 68%;
+            }
+        }
+        .bevmoPara{
+            margin: -23% 0 0 17%;
+        }
+
+        .featuredMenu{
+            .featuredMenu-item{
+    
+                .featuredNumber{
+                    font-size: 1.2rem;
+                    margin: 0 5% 0 8%;
+                }
+                    
+                span {
+                    font-size: 10rem;
+                }
+            }    
+        }
+    }
+
+    .reachMeOutSection{
+        height: 61em;
+
+        .reachMeInnerCircle{
+            width: 400px;
+            height: 400px;
+            margin: 21% 0 0 0;
+        }
+
+        .reachMeManIamge{
+            width: 30.5%;
+        }
+
+        .social-Links{
+            font-size: 1rem;
+        }
+
+        .allReachMeMarques{
+            .comnReachMeMarque{
+                span{
+                    font-size: 1.6rem;
+                    line-height: 1.4em;
+                }
+            }
+        }
+    }
+
+    #blackVCardDrag{
+        top: 525em;
+    }
+    
+    #whiteVCardDrag{
+        top: 544em;
+    }
+}
+
+
+
+
+
+
+@media only screen and (max-width: 769px){
+
+    /* Main Banner Section Starts Here*/
+    .mainBanner{
+        height: 114em;
+
+        .balckBGCircle{
+            margin: 10% 0 0 0;
+            height: 99em;
+            background-image: url("../assets/png/mobileHeroBanner.png");
+        }
+
+        .mainBannerMan{
+            top: 13%;
+            height: 106em;
+            background-size: 74%;
+        }
+
+        .mainBannerText{
+
+            .youAre{
+                margin: 74% 0 0 0;
+                font-size: 4.5rem;
+            }
+
+            .viewing{
+                font-size: 6rem;
+                line-height: 74%;
+            }
+
+            .abhishekK{
+                font-size: 9rem;
+                line-height: 74%;
+            }
+
+            .portfolio{
+                font-size: 7rem;
+                line-height: 74%;
+            }
+
+        }
+
+        .threeStar{
+            margin: 142% 0 0 0;
+
+            .largeStar{
+                width: 2em;
+            }
+            .midStar{
+                width: 1.5em;
+            }
+            .smallStar{
+                width: 1em;
+            }
+        }
+
+        .allMarques{
+            margin: 162% 0 0 0;
+
+            .comnMarque{
+                span{
+                    font-size: 1.2rem;
+    
+                    .lilStar{
+                        margin: 0 0 2px 0;
+                        /*width: 10px;
+                        height: 10px;*/
+                    }
+                }
+            }
+        }
+    }
+
+    /* Decipline Section Starts Here*/
+    .deciplinesSection{
+        padding: 0 0 0 0;
+        font-size: 5.5rem;
+    }
+
+    /* Featured Work Section Starts Here*/
+    .featuredSection{
+        p{
+            font-size: 4rem;
+            padding: 0 0 4% 6%;
+        }
+
+        /*Featured Work 001 Starts Here*/
+        .featuredWorkImage{
+            height: 32em;
+
+            .bevmoNum{
+                padding: 12% 0 0 6%;
+            }
+            .bevmoText{
+                font-size: 12rem;
+                padding: 6% 0 0 12%;
+            }
+        }
+        .bevmoPara{
+            margin: -20% 0 0 24%;
+            font-size: 1rem;
+        }
+
+        /*Featured Work 002 & 003 Starts Here*/
+        .featuredMenu{
+            .featuredMenu-item{
+                padding: 8% 0;
+
+                .featuredNumber{
+                    font-size: 1.2rem;
+                    margin: 0 11% 0 6%;
+                }
+
+                .featuredHover-reveal{
+                    display: none;
+                }
+
+                span {
+                    font-size: 6rem;
+                }
+            }    
+        }
+    }
+
+    /* More Work Section Starts Here*/
+    .moreWorkSection{
+        padding: 12% 0 0 0;
+
+        .moreWorkMarquee{
+
+            .moreWorkInnerMarquee{
+                
+                span{
+                    font-size: 4rem;
+                }
+            }
+        }
+    }
+
+    /* White Star Section Starts Here*/
+    .whiteStarSection2{
+        margin: 10% 0 0 0;
+        padding: 24% 0;
+    }
+
+    /* About Me Section Starts Here*/
+    .aboutMeSection{
+        .aboutMeMarquee{
+            .aboutMeInnerMarquee{
+                span{
+                    font-size: 6rem;
+                }
+            }
+        }
+    }
+
+    /* Reach Me Out Section Starts Here*/
+    .reachMeOutSection{
+        height: 53em;
+
+        .reachMeInnerCircle{
+            margin: 29% 0 0 0;
+            width: 400px;
+            height: 400px;
+        }
+
+        .reachMeManIamge{
+            width: 46%;
+        }
+
+        .social-Links{
+            margin: 96% 0 0 0;
+            width: 100%;
+            font-size: 1.2rem;
+            align-items: center;
+            left: unset;
+            transform: unset;
+            display: flex;
+            justify-content: center;
+            
+
+            .ellipse{
+                margin: 0 4%;
+                visibility: visible;
+                height: 0.4em;
+            }
+        }
+
+        .allReachMeMarques{
+            margin: 25% 0 0 0;
+
+            .comnReachMeMarque{
+                span{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+
+    /* card Section Starts Here*/
+    #blackVCardDrag{
+        display: none;
+    }
+
+    #whiteVCardDrag{
+        width: 70%;
+        right: unset;
+        top: 345em;
+        left: 50%;
+        transform: translate(-50%) !important;
+    }
+
+    /* Footer Starts Here*/
+    .footerSection{
+        .footerMarquee{
+            .footerInnerMarquee{
+                span{
+                    font-size: 1.2rem;
+                }
+                .moreWorkArrow{
+                    margin: 0 -4px 4px 0px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 429px){
+    .mainBanner{
+        height: 62em;
+
+        .balckBGCircle{
+            margin: 18% 0 0 0;
+            height: 55em;
+        }
+
+        .mainBannerMan{
+            top: 17%;
+            height: 51em;
+            background-size: 74%;
+        }
+
+        .mainBannerText{
+            .youAre{
+                margin: 80% 0 0 0;
+                font-size: 2.5rem;
+            }
+
+            .viewing{
+                font-size: 3.5rem;
+                line-height: 80%;
+            }
+
+            .abhishekK{
+                font-size: 5rem;
+                line-height: 72%;
+            }
+
+            .portfolio{
+                font-size: 3rem;
+                line-height: 78%;
+            }
+
+        }
+
+        .threeStar{
+            .largeStar{
+                width: 1.5em;
+            }
+            .midStar{
+                width: 1em;
+            }
+            .smallStar{
+                width: 0.5em;
+            }
+        }
+
+        .allMarques{
+            margin: 165% 0 0 0;
+
+            .comnMarque{
+                span{
+                    font-size: 0.7rem;
+    
+                    .lilStar{
+                        margin: 0 0 0 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .deciplinesSection{
+        padding: 12% 0 0 0;
+        font-size: 3rem;
+    }
+
+    /* Main Self Info Two Section Starts Here*/
+    .mainSelfInfoTwo{
+        font-size: 0.8rem;
+    }
+
+    /* White Star Section Starts Here*/
+    .whiteStarSection{
+        img{
+            width: 1.5em;
+        }
+    }
+
+    /* Featured Work Section Starts Here*/
+    .featuredSection{
+        p{
+            font-size: 2rem;
+        }
+
+        /*Featured Work 001 Starts Here*/
+        .featuredWorkImage{
+            height: 32em;
+
+            .bevmoNum{
+                font-size: 1rem;
+                padding: 18% 0 0 6%;
+            }
+            .bevmoText{
+                font-size: 6rem;
+                padding: 14% 0 0 12%;
+            }
+        }
+        .bevmoPara{
+            margin: -65% 0 0 24%;
+            font-size: 1rem;
+        }
+
+        /*Featured Work 002 & 003 Starts Here*/
+        .featuredMenu{
+            .featuredMenu-item{
+                .featuredNumber{
+                    font-size: 1rem;
+                    margin: 0 11% 0 6%;
+                }
+
+                span {
+                    font-size: 2.8rem;
+                }
+            }    
+        }
+    }
+
+    /* More Work Section Starts Here*/
+    .moreWorkSection{
+        padding: 10% 0 0 0;
+
+        .moreWorkMarquee{
+
+            .moreWorkInnerMarquee{
+                
+                span{
+                    font-size: 3rem;
+                }
+            }
+        }
+    }
+
+    /* White Star Section Starts Here*/
+    .whiteStarSection2{
+        margin: 14% 0 0 0;
+        img{
+            width: 1.5em;
+        }
+    }
+
+    /* About Me Section Starts Here*/
+    .aboutMeSection{
+        .aboutMeMarquee{
+            .aboutMeInnerMarquee{
+                span{
+                    font-size: 4rem;
+                }
+            }
+        }
+    }
+
+    /* Main Self Info Two Section Starts Here*/
+    .mainSelfInfoThree{
+        .innerMainSelfInfoThree{
+            font-size: 0.8rem;
+        }
+    }
+
+    /* Reach Me Out Section Starts Here*/
+    .reachMeOutSection{
+        height: 26em;
+
+        .reachMeInnerCircle{
+            width: 196px;
+            height: 196px;
+        }
+
+        .reachMeManIamge{
+            width: 42%;
+        }
+
+        .social-Links{
+            margin: 84% 0 0 0%;
+            font-size: 0.8rem;
+        }
+
+        .allReachMeMarques{
+            margin: 24% 0 0 0;
+
+            .comnReachMeMarque{
+                span{
+                    font-size: 1rem;
+                }
+            }
+            .hide-Me{
+                display: none;
+            }
+        }
+    }
+
+    #whiteVCardDrag{
+        top: 208em;
+    }
+}
+
+@media only screen and (max-width: 413px){
+    .reachMeOutSection{
+
+        .reachMeManIamge{
+            width: 43%;
+        }
+
+        .social-Links{
+            margin: 87% 0 0 0%;
+            font-size: 0.7rem;
+        }
+    }
+
+    #whiteVCardDrag{
+        width: 64%;
+        top: 206em;
+    }
+}
+
+@media only screen and (max-width: 394px){
+    .deciplinesSection {
+        font-size: 2.8rem;
+    }
+
+    .reachMeOutSection {
+        .reachMeManIamge {
+        width: 44.5%;
+        }
+
+        .social-Links{
+            margin: 90% 0 0 0%;
+        }
+    }
+
+    #whiteVCardDrag {
+        top: 202em;
+    }
+
+    .footerSection{
+        .footerMarquee{
+            .footerInnerMarquee{
+                span{
+                    font-size: 1rem;
+
+                    .moreWorkArrow{
+                        margin: 0 -4px 4px 0px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 391px){
+
+    .reachMeOutSection{
+        .social-Links {
+            margin: 91% 0 0 0%;
+        }
+    }
+    #whiteVCardDrag {
+        top: 201em;
+    }
+
+}
+
+@media only screen and (max-width: 377px){
+
+    /* Main Banner Section Starts Here*/
+    .mainBanner{
+        height: 58em;
+
+        .balckBGCircle{
+            margin: 20% 0 0 0;
+        }
+
+        .mainBannerMan{
+            height: 54em;
+        }
+
+        .mainBannerText{
+
+            .youAre{
+                margin: 84% 0 0 0;
+                font-size: 2.5rem;
+            }
+
+            .viewing{
+                font-size: 3.5rem;
+            }
+
+            .abhishekK{
+                font-size: 4.5rem;
+            }
+
+            .portfolio{
+                font-size: 3rem;
+            }
+
+        }
+
+        .threeStar{
+            margin: 150% 0 0 0;
+
+            .largeStar{
+                width: 1.5em;
+            }
+            .midStar{
+                width: 1em;
+            }
+            .smallStar{
+                width: 0.5em;
+            }
+        }
+
+        .allMarques{
+            margin: 172% 0 0 0;
+
+            .comnMarque{
+                span{
+                    font-size: 0.6rem;
+    
+                    .lilStar{
+                        width: 6px;
+                        height: 6px;
+                    }
+                }
+            }
+
+            .skillsMarque{
+                margin: 1% 0 0 0;
+            }
+            .rollsMarque{
+                margin: 6% 0 0 0;
+            }
+            .iskconMarque{
+                margin: 7% 0 0 0;
+            }
+            .hobbiesMarque{
+                margin: 8% 0 0 0;
+            }
+            .artistMarque{
+                margin: 4% 0 0 0;
+            }
+        }
+    }
+
+    /* Decipline Section Starts Here*/
+    .deciplinesSection{
+        font-size: 2.5rem;
+    }
+
+    /* Main Self Info Two Section Starts Here*/
+    .mainSelfInfoTwo{
+        font-size: 0.8rem;
+
+    }
+
+    /* White Star Section Starts Here*/
+    .whiteStarSection{
+        img{
+            width: 1.5em;
+        }
+    }
+
+    /* Featured Work Section Starts Here*/
+    .featuredSection{
+        letter-spacing: 0.1em;
+
+        p{
+            font-size: 1.5rem;
+        }
+
+        /*Featured Work 001 Starts Here*/
+        .featuredWorkImage{
+            height: 16em;
+
+            .bevmoNum{
+                padding: 12% 0 0 6%;
+                font-size: 0.8rem;
+            }
+            .bevmoText{
+                font-size: 5rem;
+                padding: 6% 0 0 10%;
+            }
+        }
+        .bevmoPara{
+            margin: -26% 0 0 22%;
+            font-size: 0.8rem;
+        }
+
+        /*Featured Work 002 & 003 Starts Here*/
+        .featuredMenu{
+            .featuredMenu-item{
+                .featuredNumber{
+                    font-size: 0.8rem;
+                    margin: 0 6% 0 6%;
+                }
+
+                span {
+                    font-size: 2.8rem;
+                }
+            }    
+        }
+    }
+
+    /* More Work Section Starts Here*/
+    .moreWorkSection{
+        padding: 12% 0 0 0;
+
+        .moreWorkMarquee{
+
+            .moreWorkInnerMarquee{
+                
+                span{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+
+    /* White Star Section Starts Here*/
+    .whiteStarSection2{
+        padding: 26% 0;
+
+        img{
+            width: 1.5em;
+        }
+    }
+
+    /* About Me Section Starts Here*/
+    .aboutMeSection{
+        .aboutMeMarquee{
+            .aboutMeInnerMarquee{
+                span{
+                    font-size: 4rem;
+                }
+            }
+        }
+    }
+
+    /* Main Self Info Two Section Starts Here*/
+    .mainSelfInfoThree{
+        margin: 18% 0 0 0;
+        .innerMainSelfInfoThree{
+            font-size: 0.8rem;
+        }
+
+    }
+
+    /* Reach Me Out Section Starts Here*/
+    .reachMeOutSection{
+        height: 24em;
+
+        .reachMeInnerCircle{
+            width: 169px;
+            height: 169px;
+        }
+
+        .reachMeManIamge {
+            width: 41.7%;
+        }
+
+        .social-Links{
+            margin: 86% 0 0 0%;
+        }
+
+        .allReachMeMarques{
+            margin: 22% 0 0 0;
+
+            .comnReachMeMarque{
+                span{
+                    font-size: 0.8rem;
+                }
+            }
+            .hide-Me{
+                display: none;
+            }
+        }
+    }
+
+    /* card Section Starts Here*/
+    #whiteVCardDrag{
+        top: 178em;
+    }
+
+    /* Footer Starts Here*/
+    .footerSection{
+        .footerMarquee{
+            .footerInnerMarquee{
+                span{
+                    font-size: 0.8rem;
+
+                    .moreWorkArrow{
+                        margin: 0 -3px 3px 0px;
+                        width: 6px;
+                        height: 6px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 361px){
+
+    /* Main Banner Section Starts Here*/
+    .mainBanner{
+
+        .mainBannerMan{
+            height: 52em;
+        }
+    }
+
+    /* Reach Me Out Section Starts Here*/
+    .reachMeOutSection{
+        .reachMeManIamge{
+            width: 43%;
+        }
+
+        .social-Links{
+            margin: 90% 0 0 0%;
+        }
+    }
+
+    /* card Section Starts Here*/
+    #whiteVCardDrag{
+        top: 175em;
+    }
+}
+
+
+
+
